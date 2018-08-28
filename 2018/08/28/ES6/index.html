@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>ES6 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="函数总体规则 不在函数内定义的变量具有全局作用域，所有的全局作用域变量被绑定到window的一个属性 内部函数变量可以访问外部函数变量 如果内部函数变量和外部函数变量名相同，内部函数变量会屏蔽外部函数变量 let块级作用域变量用var声明的变量作用于函数内部：   function foo() { for (var i=0; i&amp;lt;100; i++) { } i += 100; // 仍然可以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ES6">
+<meta property="og:url" content="http://yoursite.com/2018/08/28/ES6/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="函数总体规则 不在函数内定义的变量具有全局作用域，所有的全局作用域变量被绑定到window的一个属性 内部函数变量可以访问外部函数变量 如果内部函数变量和外部函数变量名相同，内部函数变量会屏蔽外部函数变量 let块级作用域变量用var声明的变量作用于函数内部：   function foo() { for (var i=0; i&amp;lt;100; i++) { } i += 100; // 仍然可以">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-28T12:02:42.278Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ES6">
+<meta name="twitter:description" content="函数总体规则 不在函数内定义的变量具有全局作用域，所有的全局作用域变量被绑定到window的一个属性 内部函数变量可以访问外部函数变量 如果内部函数变量和外部函数变量名相同，内部函数变量会屏蔽外部函数变量 let块级作用域变量用var声明的变量作用于函数内部：   function foo() { for (var i=0; i&amp;lt;100; i++) { } i += 100; // 仍然可以">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-ES6" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/28/ES6/" class="article-date">
+  <time datetime="2018-08-28T12:02:15.000Z" itemprop="datePublished">2018-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ES6
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="总体规则"><a href="#总体规则" class="headerlink" title="总体规则"></a>总体规则</h2><ul>
+<li>不在函数内定义的变量具有全局作用域，所有的全局作用域变量被绑定到window的一个属性</li>
+<li>内部函数变量可以访问外部函数变量</li>
+<li><p>如果内部函数变量和外部函数变量名相同，内部函数变量会屏蔽外部函数变量</p>
+<h2 id="let块级作用域变量"><a href="#let块级作用域变量" class="headerlink" title="let块级作用域变量"></a>let块级作用域变量</h2><p>用var声明的变量作用于函数内部：</p>
+<p>  function foo() {</p>
+<pre><code>for (var i=0; i&lt;100; i++) {
+}
+i += 100; // 仍然可以引用变量i
+</code></pre><p>  }</p>
+</li>
+</ul>
+<p>用let声明的变量：</p>
+<pre><code>function foo() {
+    var sum = 0;
+    for (let i=0; i&lt;100; i++) {
+        sum += i;
+    }
+    // SyntaxError:这里会报错
+    i += 1;
+}
+注：const是具有块级作用域的常量，通常大写表示
+</code></pre><h2 id="解构赋值"><a href="#解构赋值" class="headerlink" title="解构赋值"></a>解构赋值</h2><p>对多个变量进行赋值：</p>
+<pre><code>var [x, y, z] = [&apos;hello&apos;, &apos;JavaScript&apos;, &apos;ES6&apos;];
+</code></pre><p>多个变量嵌套赋值：</p>
+<pre><code>let [x, [y, z]] = [&apos;hello&apos;, [&apos;JavaScript&apos;, &apos;ES6&apos;]];
+</code></pre><p>取一个对象中的若干数据赋值：</p>
+<pre><code>var person = {
+    name: &apos;小明&apos;,
+    age: 20,
+    gender: &apos;male&apos;,
+    passport: &apos;G-12345678&apos;,
+    school: &apos;No.4 middle school&apos;
+};
+var {name, age, passport} = person;//这里name,age,passport会分别被赋值对应属性
+</code></pre><p>取一个对象中的数据，进行嵌套赋值：</p>
+<pre><code>var person = {
+    name: &apos;小明&apos;,
+    age: 20,
+    gender: &apos;male&apos;,
+    passport: &apos;G-12345678&apos;,
+    school: &apos;No.4 middle school&apos;,
+    address: {
+        city: &apos;Beijing&apos;,
+        street: &apos;No.1 Road&apos;,
+        zipcode: &apos;100001&apos;
+    }
+};
+var {name, address: {city, zip}} = person;//city,zip被赋值
+//注意：这里的address不是变量，而是为了获得里面的数据对象的属性，直接访问会报not defined错误
+</code></pre><p>如果变量对应的属性不存在，变量将被赋值为undefined。如果要使用变量名和属性名不一样，可以使用下面的语句：</p>
+<pre><code>var person = {
+    name: &apos;小明&apos;,
+    age: 20,
+    gender: &apos;male&apos;,
+    passport: &apos;G-12345678&apos;,
+    school: &apos;No.4 middle school&apos;
+};
+
+// 把passport属性赋值给变量id:
+let {name, passport:id} = person;//id=&apos;G-123456&apos;
+//注意这里的passport也不是变量，和address类似。
+</code></pre><p>解构赋值使用默认值：</p>
+<pre><code>var person = {
+    name: &apos;小明&apos;,
+    age: 20,
+    gender: &apos;male&apos;,
+    passport: &apos;G-12345678&apos;
+};
+
+// 如果person对象没有single属性，默认赋值为true:
+var {name, single=true} = person;
+</code></pre><h2 id="Array的相关高阶函数"><a href="#Array的相关高阶函数" class="headerlink" title="Array的相关高阶函数"></a>Array的相关高阶函数</h2><p><strong>map()</strong><br>方法定义在JavaScript的Array中，用来对Array中的每个元素进行相同的操作，比如对Array中的每个元素进行求平方：</p>
+<pre><code>function pow(x) {
+    return x * x;
+}
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var results = arr.map(pow); // [1, 4, 9, 16, 25, 36, 49, 64, 81]
+console.log(results);
+</code></pre><p><strong>reduce（）</strong><br>方法也是定义在JavaScript的Array中，reduce()把结果继续和序列的下一个元素做累计计算，比如对Array中的数组求和：</p>
+<pre><code>var arr = [1, 3, 5, 7, 9];
+arr.reduce(function (x, y) {
+    return x + y;
+}); // 25
+</code></pre><p><strong>filter()</strong><br>函数用于把Array的某些元素过滤掉，然后返回剩下的元素。比如删掉Array中的偶数，只保留奇数:</p>
+<pre><code>var arr = [1, 2, 4, 5, 6, 9, 10, 15];
+    var r = arr.filter(function (x) {
+    return x % 2 !== 0;
+});
+r; // [1, 5, 9, 15]
+</code></pre><p><strong>sort()</strong><br>函数用于排序。通常规定，对于两个元素x和y，<strong>如果认为x &lt; y，则返回-1，如果认为x == y，则返回0，如果认为x &gt; y，则返回1</strong></p>
+<p><strong>//注意：sort()方法默认把所有元素先转换为String，然后在根据字符的ASCII码进行排序</strong></p>
+<p>sort()可以接受一个比较函数来实现自定义排序，比如对一个数组按数字大小排序：</p>
+<pre><code>var arr = [10, 20, 1, 2];
+arr.sort(function (x, y) {
+    if (x &lt; y) {
+        return -1;
+    }
+    if (x &gt; y) {
+        return 1;
+    }
+    return 0;
+});
+console.log(arr); // [1, 2, 10, 20]
+</code></pre><h2 id="generator（生成器）"><a href="#generator（生成器）" class="headerlink" title="generator（生成器）"></a>generator（生成器）</h2><p><strong>generator</strong>生成器是ES6标准引入的新的数据类型。由function*定义，并且，除了return语句，还可以用yield返回多次。</p>
+<p>比如利用generator函数生成一个斐波那契数列，它由0，1开头：0 1 1 2 3 5 8 13 21 34 …</p>
+<pre><code>function* fib(max) {
+    var
+        t,
+        a = 0,
+        b = 1,
+        n = 0;
+    while (n &lt; max) {
+        yield a;
+        [a, b] = [b, a + b];
+        n ++;
+    }
+    return;
+}
+</code></pre><p>直接调用一个generator和调用函数不一样，fib(5)仅仅是创建了一个generator对象，还没有去执行它。</p>
+<p>调用generator对象有两个方法，一是不断地调用generator对象的next()方法</p>
+<pre><code>var f = fib(5);
+f.next(); // {value: 0, done: false}
+f.next(); // {value: 1, done: false}
+f.next(); // {value: 1, done: false}
+f.next(); // {value: 2, done: false}
+f.next(); // {value: 3, done: false}
+f.next(); // {value: undefined, done: true}
+</code></pre><p>第二个方法是直接用for … of循环迭代generator对象，这种方式不需要我们自己判断done：</p>
+<pre><code>for (var x of fib(5)) {
+    console.log(x); // 依次输出0, 1, 1, 2, 3, ...
+}
+</code></pre><h1 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h1><h2 id="class继承"><a href="#class继承" class="headerlink" title="class继承"></a>class继承</h2><p>1.子类必须在constructor方法中调用super方法</p>
+<p>用class定义对象的另一个巨大的好处是继承更方便了。想一想我们从Student派生一个PrimaryStudent需要编写的代码量。现在，原型继承的中间对象，原型对象的构造函数等等都不需要考虑了，直接通过extends来实现：</p>
+<pre><code>class Student1 {
+    constructor(name) {
+        this.name = name;
+    }
+
+    hello() {
+        alert(&apos;Hello, &apos; + this.name);
+    }
+}
+
+class PrimaryStudent1 extends Student1 {
+    constructor(name, grade) {
+        super(name); // 记得用super调用父类的构造方法!
+        this.grade = grade;
+    }
+
+    myGrade() {
+        alert(&apos;I am at grade &apos; + this.grade);
+    }
+}
+
+var myStudent = new PrimaryStudent1(&apos;this is name1&apos;,&apos;this is grade1&apos;)
+myStudent.hello();// hello,this is name1
+myStudent.myGrade();//I am at grade this is grade1
+</code></pre><h2 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h2><p>在JavaScript的世界中，所有代码都是单线程执行的。</p>
+<p>由于这个“缺陷”，导致JavaScript的所有网络操作，浏览器事件，都必须是异步执行。</p>
+<p>一个最简单的Promise例子：生成一个0-2之间的随机数，如果小于1，则等待一段时间后返回成功，否则返回失败：</p>
+<pre><code>function test(resolve, reject) {
+    var timeOut = Math.random() * 2;
+    log(&apos;set timeout to: &apos; + timeOut + &apos; seconds.&apos;);
+    setTimeout(function () {
+        if (timeOut &lt; 1) {
+            log(&apos;call resolve()...&apos;);
+            resolve(&apos;200 OK&apos;);
+        }
+        else {
+            log(&apos;call reject()...&apos;);
+            reject(&apos;timeout in &apos; + timeOut + &apos; seconds.&apos;);
+        }
+    }, timeOut * 1000);
+}
+
+new Promise(test).then(function (result) {
+    console.log(&apos;成功：&apos; + result);
+}).catch(function (reason) {
+    console.log(&apos;失败：&apos; + reason);
+});
+</code></pre><p>Promise还可以做更多的事情，比如，有若干个异步任务，需要先做任务1，如果成功后再做任务2，任何任务失败则不再继续并执行错误处理函数。</p>
+<p>要串行执行这样的异步任务，不用Promise需要写一层一层的嵌套代码。有了Promise，我们只需要简单地写：</p>
+<pre><code>job1.then(job2).then(job3).catch(handleError);
+</code></pre><p>其中，job1、job2和job3都是Promise对象。</p>
+<p><strong>resolve</strong> 表示异步操作执行成功后的回调函数，<strong>reject</strong> 表示异步操作执行失败后的回调函数。</p>
+<p><strong>then</strong>接收resovle传递的数据，<strong>catch</strong>接收reject传递的数据。</p>
+<pre><code>next( 1 ).then( function( res ){
+    console.log( &apos;resolve:&apos; +res );
+} ).catch( function( res ){
+     console.log( &apos;reject:&apos; + res );
+} );
+</code></pre><h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><p>ES6模板语法连接字符串:</p>
+<pre><code>var name = &apos;小明&apos;;
+var age = 20;
+var message = `你好, ${name}, 你今年${age}岁了!`;
+alert(message);
+</code></pre><p>获取字符串的长度：</p>
+<pre><code>var s = &apos;Hello, world!&apos;;
+s.length; // 13
+</code></pre><p>获取字符串某个指定位置字符, .charAt()方法有相同的功能：</p>
+<pre><code>var s = &apos;Hello, world!&apos;;
+
+s[0]; // &apos;H&apos;
+s[6]; // &apos; &apos;
+s[7]; // &apos;w&apos;
+s[12]; // &apos;!&apos;
+s[13]; // undefined 超出范围的索引不会报错，但一律返回undefined
+//注意：空字符也占一个位置。同时字符串是不可变的，如果对字符串某个索引赋值，不会有任何效果。
+</code></pre><h2 id="字符串方法：调用这些方法本身不会改变原有字符串的内容，而是返回一个新的字符串"><a href="#字符串方法：调用这些方法本身不会改变原有字符串的内容，而是返回一个新的字符串" class="headerlink" title="字符串方法：调用这些方法本身不会改变原有字符串的内容，而是返回一个新的字符串"></a>字符串方法：调用这些方法本身不会改变原有字符串的内容，而是返回一个新的字符串</h2><p><strong>charAt()</strong>返回指定位置的字符</p>
+<p><strong>charCodeAt()</strong>返回指定位置的字符的Unicode编码</p>
+<p><strong>toUpperCase()</strong>把一个字符串全部变为大写</p>
+<p><strong>toLowerCase()</strong>把一个字符串全部变为小写</p>
+<p><strong>indexOf()</strong>搜索指定字符串出现的位置：</p>
+<pre><code>var s = &apos;hello, world&apos;;
+s.indexOf(&apos;world&apos;); // 返回7
+s.indexOf(&apos;World&apos;); // 没有找到指定的子串
+</code></pre><p><strong>lastIndexOf()</strong>返回字符串最后出现的位置</p>
+<p><strong>substring()</strong>返回指定索引区间的子串：</p>
+<pre><code>var s = &apos;hello, world&apos;
+s.substring(0, 5); // **从索引0开始到5（不包括5）**，返回&apos;hello&apos;
+s.substring(7); // 从索引7开始到结束，返回&apos;world&apos;
+</code></pre><p><strong>split</strong>(separator,howmany)按分隔符分割字符串数组，第一个参数必需，分割符，第二个参数可选，表示返回新字符串数组的最大长度：</p>
+<pre><code>var str=&apos;How are you?&apos;
+str.split(&apos; &apos;) //How,are,you?
+str.split(&apos;&apos;) //H,o,w, ,a,r,e, ,y,o,u,?
+str.split(&apos; &apos;,2) //How,are
+</code></pre><p><strong>trim()</strong>去掉字符串首尾的空格</p>
+<pre><code>var greeting = &apos;   Hello world!   &apos;;
+console.log(greeting.trim()); // expected output: &quot;Hello world!&quot;;
+</code></pre><h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p><strong>indexOf()</strong>方法返回在数组中可以找到一个给定元素的第一个索引，如果不存在，则返回-1。</p>
+<p><strong>splice()</strong>方法是修改Array的“万能方法”，它可以从指定的索引开始删除若干元素，然后再从该位置添加若干元素：</p>
+<pre><code>var arr = [&apos;Microsoft&apos;, &apos;Apple&apos;, &apos;Yahoo&apos;, &apos;AOL&apos;, &apos;Excite&apos;, &apos;Oracle&apos;];
+// 从索引2开始删除3个元素,然后再添加两个元素:
+arr.splice(2, 3, &apos;Google&apos;, &apos;Facebook&apos;); // 返回删除的元素 [&apos;Yahoo&apos;, &apos;AOL&apos;, &apos;Excite&apos;]
+arr; // [&apos;Microsoft&apos;, &apos;Apple&apos;, &apos;Google&apos;, &apos;Facebook&apos;, &apos;Oracle&apos;]
+// 只删除,不添加:
+arr.splice(2, 2); // [&apos;Google&apos;, &apos;Facebook&apos;]
+arr; // [&apos;Microsoft&apos;, &apos;Apple&apos;, &apos;Oracle&apos;]
+// 只添加,不删除:
+arr.splice(2, 0, &apos;Google&apos;, &apos;Facebook&apos;); // 返回[],因为没有删除任何元素
+arr; // [&apos;Microsoft&apos;, &apos;Apple&apos;, &apos;Google&apos;, &apos;Facebook&apos;, &apos;Oracle&apos;]
+</code></pre><p><strong>slice()</strong>就是对应String的substring()版本，它截取Array的部分元素，然后返回一个新的Array：</p>
+<pre><code>var arr = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;, &apos;E&apos;, &apos;F&apos;, &apos;G&apos;];
+arr.slice(0, 3); // 从索引0开始，到索引3结束，但不包括索引3: [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]
+arr.slice(3); // 从索引3开始到结束: [&apos;D&apos;, &apos;E&apos;, &apos;F&apos;, &apos;G&apos;]
+//如果不给slice()传递任何参数，它就会从头到尾截取所有元素。利用这一点，我们可以很容易地复制一个Array：
+</code></pre><p><strong>push()和pop()</strong> push()向Array的末尾添加若干元素，pop()则把Array的最后一个元素删除掉：</p>
+<pre><code>var arr = [1, 2];
+arr.push(&apos;A&apos;, &apos;B&apos;); // 返回Array新的长度: 4
+arr; // [1, 2, &apos;A&apos;, &apos;B&apos;]
+arr.pop(); // pop()返回&apos;B&apos;
+arr; // [1, 2, &apos;A&apos;]
+arr.pop(); arr.pop(); arr.pop(); // 连续pop 3次
+arr; // []
+arr.pop(); // 空数组继续pop不会报错，而是返回undefined
+arr; // []
+</code></pre><p><strong>unshift()和shift()</strong> 如果要往Array的头部添加若干元素，使用unshift()方法，shift()方法则把Array的第一个元素删掉：</p>
+<pre><code>var arr = [1, 2];
+arr.unshift(&apos;A&apos;, &apos;B&apos;); // 返回Array新的长度: 4
+arr; // [&apos;A&apos;, &apos;B&apos;, 1, 2]
+arr.shift(); // &apos;A&apos;
+arr; // [&apos;B&apos;, 1, 2]
+arr.shift(); arr.shift(); arr.shift(); // 连续shift 3次
+arr; // []
+arr.shift(); // 空数组继续shift不会报错，而是返回undefined
+arr; // []
+</code></pre><p><strong>sort()</strong>sort()可以对当前Array进行排序，它会直接修改当前Array的元素位置，直接调用时，按照默认顺序排序：</p>
+<pre><code>var arr = [&apos;B&apos;, &apos;C&apos;, &apos;A&apos;];
+arr.sort();
+arr; // [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]
+</code></pre><p><strong>reverse</strong>reverse()把整个Array的元素给掉个个，也就是反转：</p>
+<pre><code>var arr = [&apos;one&apos;, &apos;two&apos;, &apos;three&apos;];
+arr.reverse(); 
+arr; // [&apos;three&apos;, &apos;two&apos;, &apos;one&apos;]
+</code></pre><p><strong>concat</strong>concat()方法把当前的Array和另一个Array连接起来，并返回一个新的Array：</p>
+<pre><code>var arr = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;];
+var added = arr.concat([1, 2, 3]);
+added; // [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, 1, 2, 3]
+arr; // [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]
+//注意concat()方法并没有修改当前Array，而是返回了一个新的Array。
+</code></pre><p><strong>join</strong>join()方法是一个非常实用的方法，它把当前Array的每个元素都用指定的字符串连接起来，然后返回连接后的字符串：</p>
+<pre><code>var arr = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, 1, 2, 3];
+arr.join(&apos;-&apos;); // &apos;A-B-C-1-2-3&apos;
+</code></pre><p><strong>includes</strong> 方法用来判断一个数组是否包含一个指定的值，根据情况，如果包含则返回 true，否则返回false。</p>
+<pre><code>var array1 = [1, 2, 3];
+console.log(array1.includes(2));
+// expected output: true
+</code></pre><h1 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h1><p><strong>Map</strong>是一组键值对的结构，具有极快的查找速度。</p>
+<h1 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h1><p><strong>Set</strong>和Map类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在Set中，没有重复的key。</p>
+<p>要创建一个Set，需要提供一个Array作为输入，或者直接创建一个空Set：</p>
+<pre><code>var s1 = new Set(); // 空Set
+var s2 = new Set([1, 2, 3]); // 含1, 2, 3
+</code></pre><h1 id="iterable"><a href="#iterable" class="headerlink" title="iterable"></a>iterable</h1><p>遍历Array可以采用下标循环，遍历Map和Set就无法使用下标。为了统一集合类型，ES6标准引入了新的iterable类型，Array、Map和Set都属于iterable类型。</p>
+<p>具有iterable类型的集合可以通过新的for … of循环来遍历。</p>
+<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><p><strong>for…in</strong>for循环的一个变体是for … in循环，它可以把一个对象的所有属性依次循环出来：</p>
+<pre><code>var o = {
+name: &apos;Jack&apos;,
+age: 20,
+city: &apos;Beijing&apos;
+};
+for (var key in o) {
+    console.log(key); // &apos;name&apos;, &apos;age&apos;, &apos;city&apos;
+}
+</code></pre><p><strong>for…of</strong>循环是ES6引入的新的语法:</p>
+<pre><code>var a = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;];
+var s = new Set([&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]);
+var m = new Map([[1, &apos;x&apos;], [2, &apos;y&apos;], [3, &apos;z&apos;]]);
+for (var x of a) { // 遍历Array
+    console.log(x);
+}
+for (var x of s) { // 遍历Set
+    console.log(x);
+}
+for (var x of m) { // 遍历Map
+    console.log(x[0] + &apos;=&apos; + x[1]);
+}
+</code></pre><p><strong>forEach</strong>更好的方式是直接使用iterable内置的forEach方法，它接收一个函数，每次迭代就自动回调该函数。以Array为例：</p>
+<pre><code>var a = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;];
+a.forEach(function (element, index, array) {
+// element: 指向当前元素的值
+// index: 指向当前索引
+// array: 指向Array对象本身
+console.log(element + &apos;, index = &apos; + index);
+});
+</code></pre><h1 id="浏览器对象"><a href="#浏览器对象" class="headerlink" title="浏览器对象"></a>浏览器对象</h1><h2 id="window"><a href="#window" class="headerlink" title="window"></a>window</h2><p><strong>windows</strong>对象不但充当全局作用域，而且表示浏览器窗口。</p>
+<p><strong>window.innerWidth</strong>浏览器窗口内部宽度，<strong>window.outerwidth</strong>浏览器窗口整个宽度。<br><strong>window.innerHeight</strong>浏览器窗口内部高度，<strong>window.outerHeight</strong>浏览器窗口整个高度<br>//外部是浏览器窗口整个的大小，内部窗口是页面能显示的窗口大小。</p>
+<h2 id="navigator"><a href="#navigator" class="headerlink" title="navigator"></a>navigator</h2><p><strong>navigator对象</strong>表示浏览器的信息。  </p>
+<ul>
+<li>navigator.appName：浏览器名称；  </li>
+<li>navigator.appVersion：浏览器版本；  </li>
+<li>navigator.language：浏览器设置的语言；  </li>
+<li>navigator.platform：操作系统类型；  </li>
+<li>navigator.userAgent：浏览器设定的User-Agent字符串。</li>
+</ul>
+<h1 id="screen"><a href="#screen" class="headerlink" title="screen"></a>screen</h1><p><strong>screnn</strong>对象表示屏幕的信息。</p>
+<ul>
+<li>screen.width：屏幕宽度，以像素为单位；  </li>
+<li>screen.height：屏幕高度，以像素为单位；  </li>
+<li>screen.colorDepth：返回颜色位数，如8、16、24。<br>//如果你的windows把屏幕放大为125%，那么1920x1080的屏幕会显示为1536x864。</li>
+</ul>
+<h1 id="location"><a href="#location" class="headerlink" title="location"></a>location</h1><p><strong>location</strong>对象表示当前页面的URL信息。例如，一个完整的URL：</p>
+<pre><code>http://www.example.com:8080/path/index.html?a=1&amp;b=2#TOP
+</code></pre><p>可以用location.href获取。要获得URL各个部分的值，可以这么写：</p>
+<pre><code>location.protocol; // &apos;http&apos;
+location.host; // &apos;www.example.com&apos;
+location.port; // &apos;8080&apos;
+location.pathname; // &apos;/path/index.html&apos;
+location.search; // &apos;?a=1&amp;b=2&apos;
+location.hash; // &apos;TOP&apos;
+location.origin //http://www.example.com
+location.href// http://www.example.com:8080/path/index.html?a=1&amp;b=2#TOP
+</code></pre><p>要加载一个新页面，可以调用location.assign()。如果要重新加载当前页面，可以调用location.reload()。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/28/ES6/" data-id="cjldnz6ex0001aotbbbc3mhsw" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/08/25/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/08/28/ES6/">ES6</a>
+          </li>
+        
+          <li>
+            <a href="/2018/08/25/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
