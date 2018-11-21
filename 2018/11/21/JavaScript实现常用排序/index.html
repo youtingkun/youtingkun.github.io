@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="稻草人的博客">
 <meta property="og:description" content="一、冒泡排序//相邻两个数之间进行排序 //外层长度为length //内层长度为length-1-i,因为内层比较的时候会j+1，所以这里是length-1 //第一次内层循环完会把最大的一个数放在最后，然后又从第一位开始循环。  function bubbleSort(arr){     for(let i = 0; i &amp;lt; arr.length; i++){         for(l">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-21T06:44:40.377Z">
+<meta property="og:updated_time" content="2018-11-21T09:58:00.673Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript实现常用排序">
 <meta name="twitter:description" content="一、冒泡排序//相邻两个数之间进行排序 //外层长度为length //内层长度为length-1-i,因为内层比较的时候会j+1，所以这里是length-1 //第一次内层循环完会把最大的一个数放在最后，然后又从第一位开始循环。  function bubbleSort(arr){     for(let i = 0; i &amp;lt; arr.length; i++){         for(l">
@@ -197,9 +197,9 @@
 
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
+        <!-- <span class="logo-line-before"><i></i></span> -->
         <span class="site-title">稻草人的博客</span>
-        <span class="logo-line-after"><i></i></span>
+        <!-- <span class="logo-line-after"><i></i></span> -->
       </a>
     </div>
     
@@ -627,57 +627,6 @@ function binary_search(arr, key) {
         }
     }
 }
-</code></pre><h1 id="八、二叉树实现"><a href="#八、二叉树实现" class="headerlink" title="八、二叉树实现"></a>八、二叉树实现</h1><pre><code>创建
-function Node(data,left,right){
-    this.data = data;//数值
-    this.left = left;//左节点
-    this.right = right;//右节点
-};
-
-插入二叉树
-function insert(node,data){
-    //创建一个新的节点
-    let newNode  = new Node(data,null,null);
-    //判断是否存在根节点，没有将新节点存入
-    if(node == null){
-        node = newNode;
-    }else{
-        //获取根节点
-        let current = node;
-        let parent;
-        while(true){
-            //将当前节点保存为父节点
-            parent = current;
-            //将小的数据放在左节点
-            if(data &lt; current.data){
-                //获取当前节点的左节点
-                //判断当前节点下的左节点是否有数据
-                current = current.left;
-                if(current == null){
-                    //如果没有数据将新节点存入当前节点下的左节点
-                    parent.left = newNode;
-                    break;
-                }
-            }else{
-                current = current.right;
-                if(current == null){
-                    parent.right = newNode;
-                    break;
-                }
-            }
-        }    
-    }
-}
-
-翻转二叉树
-function invertTree(node) {
-    if (node !== null) {
-        node.left, node.right = node.left, node.right;
-        invertTree(node.left);
-        invertTree(node.right);
-    }
-    return node;
-}
 </code></pre>
       
     </div>
@@ -922,7 +871,9 @@ function invertTree(node) {
 
 
 
+
 -->
+
         
 
 
