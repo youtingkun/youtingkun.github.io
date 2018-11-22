@@ -353,6 +353,189 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/22/从URL到页面显示发生了什么/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="犹廷坤">
+      <meta itemprop="description" content="生活应该像时钟一样">
+      <meta itemprop="image" content="https://i.imgur.com/aJWAcZ1.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="稻草人的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/11/22/从URL到页面显示发生了什么/" class="post-title-link" itemprop="http://yoursite.com/index.html">从URL到页面显示发生了什么</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-22 15:49:37" itemprop="dateCreated datePublished" datetime="2018-11-22T15:49:37+08:00">2018-11-22</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/计算机网络/" itemprop="url" rel="index"><span itemprop="name">计算机网络</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/22/从URL到页面显示发生了什么/#comments" itemprop="discussionUrl">
+                
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/11/22/从URL到页面显示发生了什么/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="一、进行DNS域名解析"><a href="#一、进行DNS域名解析" class="headerlink" title="一、进行DNS域名解析"></a>一、进行DNS域名解析</h1><p><strong>解析的查找顺序依次为：</strong>  </p>
+<p>浏览器自身的DNS缓存 -&gt; 操作系统自身的缓存 -&gt; 本地域名服务器 -&gt; 根域名服务器。  </p>
+<p><strong>DNS服务器的分级查询：</strong>  </p>
+<p>主机名.次级域名.顶级域名.根域名 = <a href="http://www.google.com.root" target="_blank" rel="noopener">www.google.com.root</a>   //一般root会被省略，因为对于所有的域名都是一样的。<br>全世界有13台根服务器，域名为a.root-servers.net 到m.root-servers.net。</p>
+<p>所谓”分级查询”，就是从根域名开始，依次查询每一级域名的NS记录，直到查到最终的IP地址，过程大致如下：</p>
+<pre><code>1.从&quot;根域名服务器&quot;查到&quot;顶级域名服务器&quot;的NS记录和A记录（IP地址）
+2.从&quot;顶级域名服务器&quot;查到&quot;次级域名服务器&quot;的NS记录和A记录（IP地址）
+3.从&quot;次级域名服务器&quot;查出&quot;主机名&quot;的IP地址
+//NS记录（Name Server的缩写），即哪些服务器负责管理google.com的DNS记录。
+</code></pre>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/22/从URL到页面显示发生了什么/" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+         
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/21/二叉树相关/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1131,7 +1314,7 @@ function bubbleSort(arr){
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1148,7 +1331,9 @@ function bubbleSort(arr){
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1165,7 +1350,9 @@ function bubbleSort(arr){
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
