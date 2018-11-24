@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Cookies、session、LocalStorage、SessionStorage的区别]]></title>
+    <url>%2F2018%2F11%2F24%2FCookies%E3%80%81session%E3%80%81LocalStorage%E3%80%81SessionStorage%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[cookie和session HTML4提供的缓存机制，都是用来跟踪浏览器用户身份的会话方式。 Local Storage和Session Storage HTML5提供的本地缓存机制，只能存储字符串类型。 sessionStorage：仅在当前浏览器窗口关闭前有效；localStorage：始终有效，窗口或浏览器关闭也一直保存；cookie只在设置的cookie过期时间之前一直有效。 sessionStorage不在不同的浏览器窗口中共享，即使是同一个页面；localStorage 在所有同源窗口中都是共享的；cookie也是在所有同源窗口中都是共享的 cookie：1.cookie保存在浏览器内存中，大小限制为4kb，随浏览器关闭而结束。如果设置了过期时间，会被保存在硬盘中，关闭浏览器后，数据仍然存在，知道过期时间结束才消失。 2.cookie应用于判断用户是否登陆过网站，以便下次登陆时能够自动登陆。 3.cookie安全信较低，每次访问都要传送cooki给服务器。 session：1.session保存在服务器端，没有大小限制，当服务器收到创建session对象请求时，如果客户端的请求包含sessionid，服务器返回sessionid对应的session对象。如果没有sessionid,服务器会创建sessionid和session对象返回给客户端。通常使用cookie方式存储sessionid到客户端。 2.session用于保存每个用户的专用信息，通过seeionID来区分不同的客户。比如用户的登陆信息，购物车信息等。 3.要先攻破cookie才能攻破session，如果存用户信息过多，会占用服务器内存。 Local Storage:1.永久保存在客户端的本地硬盘中。即使浏览器关闭了，下次访问该网站时仍能使用。 Session Storage:1.将数据保存在session对象中。生命周期为进入网站，直到浏览器窗口关闭的这段时间。]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>网络缓存</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[计算机网络相关协议]]></title>
+    <url>%2F2018%2F11%2F24%2F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E5%8D%8F%E8%AE%AE%2F</url>
+    <content type="text"><![CDATA[应用层：FTP（File Transfer Protocol）:可靠的文件传输协议。 TFTP（Trivial File Transfer Protocol）：不可靠的小文件传输协议。 HTTP（HyperText Transfer Protocol）：超文本传输协议。使用SSL加密后的安全网络协议为HTTPS。 SMTP（Simple Mail Transfer Protocol）和POP3（Post Office Protocol - Version 3）：邮件传输协议，邮件报文采用ASCII格式表示。 Telnet:远程连接协议。 SNMP（Simple Network Management Protocol）：简单网络管理协议，必须以管理员的身份登录才能完成配置。 DHCP（Dynamic Host Configuration Protocol）：动态分配IP地址协议，DHCP客户端能从DHCP服务器获得DHCP服务器的IP地址、DNS服务器的IP地址、默认网关的IP地址等。 DNS（Domain Name System）：将域名解析为IP地址。分为递归查询和迭代查询。 递归查询：主机提出一个查询请求，本地服务器会自动一层一层的查询下去，直到找到满足查询请求的IP地址，再返回给主机。即问一次，就得到最终结果。 迭代查询：服务器收到一次查询请求，就回答一次。但回答的不一定是最终地址，也可能是其他层次服务器的地址。然后客户端再去提交查询请求。即问一次答一次，而后再去问其他服务器，直到问道结果。 WEP（Wired Equivalent Privacy）：有线等价协议。两台设备间无线传输的数据进行加密的方式，用以防止非法用户窃听或侵入无线网络。 传输层：TCP（Transmission Control Protocol）：可靠连接。 UDP（User Datagram Protocol）：不可靠连接。 网络层：IP（Internet Protocol）：最重要的核心协议，无连接、不可靠。 ICMP（Internet Control Message Protocol）：因特网控制信息协议，用来检测网络通信是否顺畅。 ARP（Address Resolution Protocol和RARP（Reverse Address Resolution Protocol）：地址解析协议。ARP是把IP地址解析为MAC物理地址，RARP是把MAC物理地址解析为IP地址。 IGMP（Internet Group Management Protocol）：网络组管理协议。]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>网络协议</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[从URL到页面显示发生了什么]]></title>
     <url>%2F2018%2F11%2F22%2F%E4%BB%8EURL%E5%88%B0%E9%A1%B5%E9%9D%A2%E6%98%BE%E7%A4%BA%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88%2F</url>
     <content type="text"><![CDATA[一、进行DNS域名解析解析的查找顺序依次为： 浏览器自身的DNS缓存 -&gt; 操作系统自身的缓存 -&gt; 本地域名服务器 -&gt; 根域名服务器。 DNS服务器的分级查询： 主机名.次级域名.顶级域名.根域名 = www.google.com.root //一般root会被省略，因为对于所有的域名都是一样的。全世界有13台根服务器，域名为a.root-servers.net 到m.root-servers.net。 所谓”分级查询”，就是从根域名开始，依次查询每一级域名的NS记录，直到查到最终的IP地址，过程大致如下： 1.从&quot;根域名服务器&quot;查到&quot;顶级域名服务器&quot;的NS记录和A记录（IP地址） 2.从&quot;顶级域名服务器&quot;查到&quot;次级域名服务器&quot;的NS记录和A记录（IP地址） 3.从&quot;次级域名服务器&quot;查出&quot;主机名&quot;的IP地址 //NS记录（Name Server的缩写），即哪些服务器负责管理google.com的DNS记录。 根域名服务器分布： 查找方式分为两种： 迭代和递归。简单来说，迭代查询就是需要本地服务器自己去找，而递归查询是其它其它服务器直接把查询好的结果告诉它。 二、进行TCP协议三次握手1.主机向服务器发送一个建立连接的请求（您好，我想认识您）； 2.服务器接到请求后发送同意连接的信号（好的，很高兴认识您）； 3.主机接到同意连接的信号后，再次向服务器发送了确认信号（我也很高兴认识您），自此，主机与服务器两者建立了连接。 //结束断开的时候为四次挥手 三、发送HTTP请求和返回HTTP报文当建立起连接之后，浏览器会设置好请求报文发出。请求报文中包括请求行、请求头、空行、请求主体。https默认请求端口443， http默认80。 常见的http请求如下： POST / HTTP1.1 Host:www.wrox.com User-Agent:Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022) Content-Type:application/x-www-form-urlencoded Content-Length:40 Connection: Keep-Alive name=Professional%20Ajax&amp;publisher=Wiley //第一部分：请求行，第一行说明是post请求，以及http1.1版本。 //第二部分：请求头部，第二行至第六行。 //第三部分：空行，第七行的空行。 //第四部分：请求数据，第八行。 返回的HTTP报文如下： HTTP/1.1 200 OK Date: Fri, 22 May 2009 06:07:21 GMT Content-Type: text/html; charset=UTF-8 &lt;html&gt; &lt;head&gt;&lt;/head&gt; &lt;body&gt; &lt;!--body goes here--&gt; &lt;/body&gt; &lt;/html&gt; //第一行为状态行，（HTTP/1.1）表明HTTP版本为1.1版本，状态码为200，状态消息为（ok） //第二行和第三行为消息报头， //Date:生成响应的日期和时间；Content-Type:指定了MIME类型的HTML(text/html),编码类型是UTF-8 //第三部分：空行，消息报头后面的空行是必须的 //第四部分：响应正文，服务器返回给客户端的文本信息。 //空行后面的html部分为响应正文。 五、浏览器解析渲染页面通过HTML解析器解析HTML文档，构建一个DOM Tree，同时通过CSS解析器解析HTML中存在的CSS，构建Style Rules，两者结合形成一个Attachment。 通过Attachment构造出一个呈现树（Render Tree） Render Tree构建完毕，进入到布局阶段（layout/reflow），将会为每个阶段分配一个应出现在屏幕上的确切坐标。 最后将全部的节点遍历绘制出来后，一个页面就展现出来了。遇到script会停下来执行，所以通常把script放在底部。]]></content>
