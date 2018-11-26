@@ -86,7 +86,7 @@
     root: '/',
     scheme: 'Mist',
     version: '6.5.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -370,10 +370,10 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ES6
+          <h2 class="post-title" itemprop="name headline">ES6
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -908,8 +908,17 @@ location.href// http://www.example.com:8080/path/index.html?a=1&amp;b=2#TOP
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -928,7 +937,7 @@ location.href// http://www.example.com:8080/path/index.html?a=1&amp;b=2#TOP
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1023,6 +1032,22 @@ location.href// http://www.example.com:8080/path/index.html?a=1&amp;b=2#TOP
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#函数"><span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#总体规则"><span class="nav-text">总体规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#let块级作用域变量"><span class="nav-text">let块级作用域变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解构赋值"><span class="nav-text">解构赋值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Array的相关高阶函数"><span class="nav-text">Array的相关高阶函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#generator（生成器）"><span class="nav-text">generator（生成器）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#面向对象编程"><span class="nav-text">面向对象编程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#class继承"><span class="nav-text">class继承</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Promise"><span class="nav-text">Promise</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串"><span class="nav-text">字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串方法：调用这些方法本身不会改变原有字符串的内容，而是返回一个新的字符串"><span class="nav-text">字符串方法：调用这些方法本身不会改变原有字符串的内容，而是返回一个新的字符串</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数组"><span class="nav-text">数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法"><span class="nav-text">方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Map"><span class="nav-text">Map</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Set"><span class="nav-text">Set</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#iterable"><span class="nav-text">iterable</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#循环"><span class="nav-text">循环</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#浏览器对象"><span class="nav-text">浏览器对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#window"><span class="nav-text">window</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#navigator"><span class="nav-text">navigator</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#screen"><span class="nav-text">screen</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#location"><span class="nav-text">location</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

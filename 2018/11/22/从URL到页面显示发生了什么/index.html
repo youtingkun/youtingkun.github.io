@@ -86,7 +86,7 @@
     root: '/',
     scheme: 'Mist',
     version: '6.5.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -373,10 +373,10 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">从URL到页面显示发生了什么
+          <h2 class="post-title" itemprop="name headline">从URL到页面显示发生了什么
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -676,8 +676,17 @@ HTML解析器遇到没有async和defer的script时，将他们添加到文档中
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -696,7 +705,7 @@ HTML解析器遇到没有async和defer的script时，将他们添加到文档中
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -791,6 +800,22 @@ HTML解析器遇到没有async和defer的script时，将他们添加到文档中
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、在浏览器地址栏输入URL"><span class="nav-text">一、在浏览器地址栏输入URL</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、进行DNS域名解析"><span class="nav-text">二、进行DNS域名解析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、根据目标IP地址，端口建立TCP链接"><span class="nav-text">三、根据目标IP地址，端口建立TCP链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、服务器将响应报文，返回HTTP报文给浏览器"><span class="nav-text">四、服务器将响应报文，返回HTTP报文给浏览器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、浏览器解析渲染页面"><span class="nav-text">五、浏览器解析渲染页面</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

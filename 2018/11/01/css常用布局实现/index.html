@@ -86,7 +86,7 @@
     root: '/',
     scheme: 'Mist',
     version: '6.5.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -372,10 +372,10 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">css常用布局实现
+          <h2 class="post-title" itemprop="name headline">css常用布局实现
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1028,8 +1028,17 @@ flex-shrink:2
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1048,7 +1057,7 @@ flex-shrink:2
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1143,6 +1152,22 @@ flex-shrink:2
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#布局方式"><span class="nav-text">布局方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、水平居中"><span class="nav-text">一、水平居中</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文本-行内元素-行内块级元素水平居中"><span class="nav-text">文本/行内元素/行内块级元素水平居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单个块级元素水平居中"><span class="nav-text">单个块级元素水平居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多个块级元素水平居中"><span class="nav-text">多个块级元素水平居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#利用绝对定位水平居中"><span class="nav-text">利用绝对定位水平居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#任意个元素，利用flex水平居中"><span class="nav-text">任意个元素，利用flex水平居中</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、垂直居中"><span class="nav-text">二、垂直居中</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#单行文本-行内元素-行内块级元素-垂直居中"><span class="nav-text">单行文本/行内元素/行内块级元素 垂直居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多行文本-行内元素-行内块级元素-垂直居中"><span class="nav-text">多行文本/行内元素/行内块级元素 垂直居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片垂直居中"><span class="nav-text">图片垂直居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单个块级元素-垂直居中"><span class="nav-text">单个块级元素 垂直居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#任意个元素利用flex实现"><span class="nav-text">任意个元素利用flex实现</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、水平垂直居中"><span class="nav-text">三、水平垂直居中</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#行内-行内块级-图片-水平垂直居中"><span class="nav-text">行内/行内块级/图片 水平垂直居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#利用table-cell实现-水平垂直居中"><span class="nav-text">利用table-cell实现 水平垂直居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#利用button作为父元素-实现-水平垂直居中"><span class="nav-text">利用button作为父元素 实现 水平垂直居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绝对定位水平垂直居中"><span class="nav-text">绝对定位水平垂直居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#flex-水平垂直居中"><span class="nav-text">flex 水平垂直居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视窗水平垂直居中"><span class="nav-text">视窗水平垂直居中</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、两列布局"><span class="nav-text">四、两列布局</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#左列定宽，右列自适应"><span class="nav-text">左列定宽，右列自适应</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#左列自适应，右列定宽"><span class="nav-text">左列自适应，右列定宽</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#左列不定宽，右列自适应"><span class="nav-text">左列不定宽，右列自适应</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
