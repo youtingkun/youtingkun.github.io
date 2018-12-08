@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="稻草人的博客">
 <meta property="og:description" content="let：声明的let变量只作于于代码块内部，外部访问会报变量没有被定义的错误。 而var变量在没有声明时访问，只会返回undefined，并不会报错。  什么叫代码块内部昵？简单来说就是被{}所包裹的内容。 当在（）中声明的let变量，也只能在它后面的{}中访问。即{}可以看做let作用域的子作用域。 var a = 1; {     var b = 2;     let c = 3; } 或 f">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-08T11:03:36.531Z">
+<meta property="og:updated_time" content="2018-12-08T11:06:38.669Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="let和var不得不说的关系">
 <meta name="twitter:description" content="let：声明的let变量只作于于代码块内部，外部访问会报变量没有被定义的错误。 而var变量在没有声明时访问，只会返回undefined，并不会报错。  什么叫代码块内部昵？简单来说就是被{}所包裹的内容。 当在（）中声明的let变量，也只能在它后面的{}中访问。即{}可以看做let作用域的子作用域。 var a = 1; {     var b = 2;     let c = 3; } 或 f">
@@ -589,12 +589,12 @@ for (let b1 =1;b1&lt;=3;b1++) {
 }
 //会报错，&apos;b&apos; has already been declared
 </code></pre><p><strong>综上述，可得出结论：</strong></p>
-<ol>
-<li>for（）里面的域可以看作是它外部域的子域，是它后面{}的父域。</li>
-<li>var可以设置同名变量，因为会自动提升为全局变量，共享内存地址。</li>
-<li>let同层不可以设置同名变量。</li>
-<li>var和let变量名相同时，不可以在同一层。</li>
-<li>var和let变量名相同时，var变量可以在let变量的外层，而let变量不能在var变量的外层。</li>
+<p>**1. for（）里面的域可以看作是它外部域的子域，是它后面{}的父域。  </p>
+<ol start="2">
+<li>var可以设置同名变量，因为会自动提升为全局变量，共享内存地址。  </li>
+<li>let同层不可以设置同名变量。  </li>
+<li>var和let变量名相同时，不可以在同一层。  </li>
+<li>var和let变量名相同时，var变量可以在let变量的外层，而let变量不能在var变量的外层。**</li>
 </ol>
 <h1 id="const："><a href="#const：" class="headerlink" title="const："></a>const：</h1><p><strong>const</strong>实际上保证的，并不是变量的值不得改动，而是变量指向的那个内存地址所保存的数据不得改动。<br>对于简单类型的数据（数值、字符串、布尔值），值就保存在变量指向的那个内存地址，因此等同于常量。<br>但对于复合类型的数据（主要是对象和数组），变量指向的内存地址，保存的只是一个指向实际数据的指针，const只能保证这个指针是固定的（即总是指向另一个固定的地址），至于它指向的数据结构是不是可变的，就完全不能控制了</p>
 <p>const为常量时不可修改，声明时必须要初始化。</p>
