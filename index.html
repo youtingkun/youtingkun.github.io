@@ -462,12 +462,38 @@
 
       
         
-          
-          1.父子组件之间的传值子组件传值到父组件子组件在向父组件传值的时候，主要是通过子组件通过$emit()函数派发出事件，然后再父组件中通过事件监听:
-//比如定义了一个子组件&lt;i-button&gt;
+          <h1 id="1-父子组件之间的传值"><a href="#1-父子组件之间的传值" class="headerlink" title="1.父子组件之间的传值"></a>1.父子组件之间的传值</h1><h3 id="子组件传值到父组件"><a href="#子组件传值到父组件" class="headerlink" title="子组件传值到父组件"></a>子组件传值到父组件</h3><p>子组件在向父组件传值的时候，主要是通过子组件通过$emit()函数派发出事件，然后再父组件中通过事件监听:</p>
+<pre><code>//比如定义了一个子组件&lt;i-button&gt;
 &lt;template&gt;
-  &lt;button @click=&quot;hand
-          ...
+  &lt;button @click=&quot;handleClick&quot;&gt;
+    &lt;slot&gt;&lt;/slot&gt;
+  &lt;/button&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  export default {
+    methods: {
+      handleClick () {
+        this.$emit(&apos;on-click&apos;, {a:123});
+      }
+    }
+  }
+&lt;/script&gt;
+//这里的on-click是事件的名字，a是要传递的参数
+
+//然后在父组件中监听
+&lt;i-button @on-click=&quot;sayhi&quot;&gt;sayhi&lt;/i-button&gt;
+
+&lt;script&gt;
+  export default {
+        methods:{
+         sayhi(b){
+          console.log(b);  // Vue.js
+        }
+      }
+  }
+&lt;/script&gt;
+//注意这里的b只是用来接收子组件传递过来的对象，输入的是{a:123},并不会输出123,如果输出123可以写成b.a
+</code></pre>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -475,7 +501,7 @@
                 阅读全文 &raquo;
               </a>
             </div>
-          
+         
           <!--/noindex-->
         
       
