@@ -108,25 +108,25 @@
 
 
 
-  <meta name="description" content="一、冒泡排序//相邻两个数之间进行排序 //外层长度为length //内层长度为length-1-i,因为内层比较的时候会j+1，所以这里是length-1 //第一次内层循环完会把最大的一个数放在最后，然后又从第一位开始循环。  function bubbleSort(arr){     for(let i = 0; i &amp;lt; arr.length; i++){         for(l">
-<meta name="keywords" content="javascript">
+  <meta name="description" content="1.父子组件之间的传值子组件传值到父组件子组件在向父组件传值的时候，主要是通过子组件通过$emit()函数派发出事件，然后再父组件中通过事件监听: //比如定义了一个子组件&amp;lt;i-button&amp;gt; &amp;lt;template&amp;gt;   &amp;lt;button @click=&amp;quot;handleClick&amp;quot;&amp;gt;     &amp;lt;slot&amp;gt;&amp;lt;/slot&amp;gt;">
+<meta name="keywords" content="vue传值">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript实现常用排序">
-<meta property="og:url" content="http://yoursite.com/2018/11/21/JavaScript实现常用排序/index.html">
+<meta property="og:title" content="vue插槽与父子组件传值">
+<meta property="og:url" content="http://yoursite.com/2019/03/06/vue插槽与父子组件传值/index.html">
 <meta property="og:site_name" content="稻草人的博客">
-<meta property="og:description" content="一、冒泡排序//相邻两个数之间进行排序 //外层长度为length //内层长度为length-1-i,因为内层比较的时候会j+1，所以这里是length-1 //第一次内层循环完会把最大的一个数放在最后，然后又从第一位开始循环。  function bubbleSort(arr){     for(let i = 0; i &amp;lt; arr.length; i++){         for(l">
+<meta property="og:description" content="1.父子组件之间的传值子组件传值到父组件子组件在向父组件传值的时候，主要是通过子组件通过$emit()函数派发出事件，然后再父组件中通过事件监听: //比如定义了一个子组件&amp;lt;i-button&amp;gt; &amp;lt;template&amp;gt;   &amp;lt;button @click=&amp;quot;handleClick&amp;quot;&amp;gt;     &amp;lt;slot&amp;gt;&amp;lt;/slot&amp;gt;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-21T09:58:00.673Z">
+<meta property="og:updated_time" content="2019-03-06T12:32:24.814Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript实现常用排序">
-<meta name="twitter:description" content="一、冒泡排序//相邻两个数之间进行排序 //外层长度为length //内层长度为length-1-i,因为内层比较的时候会j+1，所以这里是length-1 //第一次内层循环完会把最大的一个数放在最后，然后又从第一位开始循环。  function bubbleSort(arr){     for(let i = 0; i &amp;lt; arr.length; i++){         for(l">
+<meta name="twitter:title" content="vue插槽与父子组件传值">
+<meta name="twitter:description" content="1.父子组件之间的传值子组件传值到父组件子组件在向父组件传值的时候，主要是通过子组件通过$emit()函数派发出事件，然后再父组件中通过事件监听: //比如定义了一个子组件&amp;lt;i-button&amp;gt; &amp;lt;template&amp;gt;   &amp;lt;button @click=&amp;quot;handleClick&amp;quot;&amp;gt;     &amp;lt;slot&amp;gt;&amp;lt;/slot&amp;gt;">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/21/JavaScript实现常用排序/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/03/06/vue插槽与父子组件传值/"/>
 
 
 
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>JavaScript实现常用排序 | 稻草人的博客</title>
+  <title>vue插槽与父子组件传值 | 稻草人的博客</title>
   
 
 
@@ -353,7 +353,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/21/JavaScript实现常用排序/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/06/vue插槽与父子组件传值/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="犹廷坤">
@@ -370,7 +370,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">JavaScript实现常用排序
+          <h2 class="post-title" itemprop="name headline">vue插槽与父子组件传值
               
             
           </h2>
@@ -395,7 +395,7 @@
                 
               
 
-              <time title="创建时间：2018-11-21 11:07:46" itemprop="dateCreated datePublished" datetime="2018-11-21T11:07:46+08:00">2018-11-21</time>
+              <time title="创建时间：2019-03-06 20:29:57" itemprop="dateCreated datePublished" datetime="2019-03-06T20:29:57+08:00">2019-03-06</time>
             
 
             
@@ -413,7 +413,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/javascript/" itemprop="url" rel="index"><span itemprop="name">javascript</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/vue/" itemprop="url" rel="index"><span itemprop="name">vue</span></a></span>
 
                 
                 
@@ -428,10 +428,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/21/JavaScript实现常用排序/#comments" itemprop="discussionUrl">
+                <a href="/2019/03/06/vue插槽与父子组件传值/#comments" itemprop="discussionUrl">
                 
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/11/21/JavaScript实现常用排序/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2019/03/06/vue插槽与父子组件传值/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -459,173 +459,162 @@
       
 
       
-        <h1 id="一、冒泡排序"><a href="#一、冒泡排序" class="headerlink" title="一、冒泡排序"></a>一、冒泡排序</h1><pre><code>//相邻两个数之间进行排序
-//外层长度为length
-//内层长度为length-1-i,因为内层比较的时候会j+1，所以这里是length-1
-//第一次内层循环完会把最大的一个数放在最后，然后又从第一位开始循环。
+        <h1 id="1-父子组件之间的传值"><a href="#1-父子组件之间的传值" class="headerlink" title="1.父子组件之间的传值"></a>1.父子组件之间的传值</h1><h3 id="子组件传值到父组件"><a href="#子组件传值到父组件" class="headerlink" title="子组件传值到父组件"></a>子组件传值到父组件</h3><p>子组件在向父组件传值的时候，主要是通过子组件通过$emit()函数派发出事件，然后再父组件中通过事件监听:</p>
+<pre><code>//比如定义了一个子组件&lt;i-button&gt;
+&lt;template&gt;
+  &lt;button @click=&quot;handleClick&quot;&gt;
+    &lt;slot&gt;&lt;/slot&gt;
+  &lt;/button&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  export default {
+    methods: {
+      handleClick () {
+        this.$emit(&apos;on-click&apos;, {a:123});
+      }
+    }
+  }
+&lt;/script&gt;
+//这里的on-click是事件的名字，a是要传递的参数
 
-function bubbleSort(arr){
-    for(let i = 0; i &lt; arr.length; i++){
-        for(let j = 0; j &lt; arr.length-1-i; j++){
-            if(arr[j]&gt;arr[j+1]){
-                let temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-            }
+//然后在父组件中监听
+&lt;i-button @on-click=&quot;sayhi&quot;&gt;sayhi&lt;/i-button&gt;
+
+&lt;script&gt;
+  export default {
+        methods:{
+         sayhi(b){
+          console.log(b);  // Vue.js
         }
+      }
+  }
+&lt;/script&gt;
+//注意这里的b只是用来接收子组件传递过来的对象，输入的是{a:123},并不会输出123,如果输出123可以写成b.a
+</code></pre><h3 id="父组件向子组件传值"><a href="#父组件向子组件传值" class="headerlink" title="父组件向子组件传值"></a>父组件向子组件传值</h3><p>父组件向子组件传值，主要是通过子组件的prop属性来接收父组件的数据:</p>
+<pre><code>//比如在父组件中声明传值
+&lt;i-button :title=titleData&gt;&lt;/i-button&gt;
+
+data(){
+    return{
+      titleData:&apos;hello props&apos;
     }
-    return arr
-}
-</code></pre><a id="more"></a> 
-<h1 id="二、选择排序"><a href="#二、选择排序" class="headerlink" title="二、选择排序"></a>二、选择排序</h1><pre><code>//内层每循环完一次会找出最小的数    
-//外层长度为length-1,因为内层j=i+1
-//第一次循环会把最小的数放在最前面,然后从下一位开始循环
+},
 
-function selectSort(arr){
-    for(let i = 0; i &lt; arr.length-1; i++){
-        let minIndex = i;
-        for(let j = i +1; j &lt; arr.length; j++){
-            if(arr[j]&lt;arr[minIndex]){
-                minIndex = j;
-            }
-        }
-        let temp = arr[i];
-        arr[i] = arr[minIndex];
-        arr[minIndex] = temp; //在最小的数所在的位置，设置为查找的第一个数
+//在子组件&lt;i-button&gt;中接收
+&lt;h3&gt;{{title}}&lt;/h3&gt;
 
+props: [&quot;title&quot;],
+
+//这里就会显示为&lt;h3&gt;helo props&lt;/h3&gt;
+</code></pre><p>或者使用props中声明的为对象的方式:</p>
+<pre><code>//在父组件中声明传值
+&lt;i-button :title=titleData&gt;&lt;/i-button&gt;
+
+data(){
+    return{
+      titleData:&apos;hello props&apos;
     }
-    return arr;
-}
-</code></pre><h1 id="三、插入排序"><a href="#三、插入排序" class="headerlink" title="三、插入排序"></a>三、插入排序</h1><pre><code>//current为拿出去缓存的数
-//如果current前面的数比它大，会把这个数向后移动一位。然后再比较前一位与current的大小
-//第一次循环，会判断第二个数，也就是缓存的数在前两位数组中大小的位置。然后再比较第三个数在前三位数组中大小的位置。
+},
 
-function insertSort(arr){
-    for(let i = 1; i &lt; arr.length; i++){
-        let current = arr[i];
-        let preIndex = i-1;
-        while(preIndex &gt;=0; arr[preIndex] &gt; current){
-            arr[preIndex+1] = arr[preIndex];
-            preIndex--;
-        }
-        arr[preIndex+1] = current;
+//在子组件&lt;i-button&gt;中接收
+&lt;h3&gt;{{title}}&lt;/h3&gt;
+
+props: {
+    title:{
+
+    },
+},
+
+//这里也会显示为&lt;h3&gt;helo props&lt;/h3&gt;
+</code></pre><h1 id="2-插槽传值，插槽的定义是子组件显示什么内容由父组件决定"><a href="#2-插槽传值，插槽的定义是子组件显示什么内容由父组件决定" class="headerlink" title="2.插槽传值，插槽的定义是子组件显示什么内容由父组件决定"></a>2.插槽传值，插槽的定义是子组件显示什么内容由父组件决定</h1><h3 id="插槽传值的基本用法："><a href="#插槽传值的基本用法：" class="headerlink" title="插槽传值的基本用法："></a>插槽传值的基本用法：</h3><pre><code>比如定义了一个子组件&lt;i-button&gt;
+&lt;template&gt;
+  &lt;button&gt;
+    &lt;slot&gt;&lt;/slot&gt;
+  &lt;/button&gt;
+&lt;/template&gt;
+
+在父组件中使用
+&lt;i-button&gt;按钮1&lt;i-button&gt;
+
+这里就会显示成为
+&lt;button&gt;按钮1&lt;button&gt;
+</code></pre><h3 id="给插槽起个名字："><a href="#给插槽起个名字：" class="headerlink" title="给插槽起个名字："></a>给插槽起个名字：</h3><pre><code>//子组件
+&lt;template&gt;
+  &lt;button&gt;
+    &lt;slot name=&quot;icon&quot;&gt;&lt;/slot&gt;
+    &lt;slot&gt;solot里面默认的内容&lt;/slot&gt;
+  &lt;/button&gt;
+&lt;/template&gt;
+
+//父组件
+&lt;i-button slot=&quot;icon&quot;&gt;按钮1&lt;/i-button&gt;
+&lt;i-button &gt;按钮2&lt;/i-button&gt;
+&lt;i-button &gt;&lt;/i-button&gt;
+
+//这里解释一下
+1.如果在父组件中使用的时候给slot赋值了名字，那么这里子组件就会显示&lt;button&gt;按钮1&lt;/button&gt;
+2.如果在父组件中没有赋值名字，但给了子组件要显示的内容，那么这里子组件就会显示&lt;button&gt;按钮2&lt;/button&gt;
+3.如果在父组件中没有赋值名字，也没有给了子组件要显示的内容，那么这里子组件就会显示默认的内容&lt;button&gt;solot里面默认的内容&lt;/button&gt;
+</code></pre><h3 id="作用域插槽："><a href="#作用域插槽：" class="headerlink" title="作用域插槽："></a>作用域插槽：</h3><p>如果我们在父组件中这样写：</p>
+<pre><code>&lt;i-button &gt;{{titleData}}&lt;/i-button&gt;
+</code></pre><p>这里的titleData是父组件中的数据，这样写是不能够正常工作的，因为titleData是父组件的数据，子组件并不能获取到，这个时候就需要用到我们的作用域插槽了。</p>
+<p>父组件来访问子组件的数据：</p>
+<pre><code>//父组件
+&lt;i-button &gt;
+  &lt;template  slot-scope=&quot;parentName&quot;&gt;{{parentName.childrenName}}&lt;/template&gt;
+&lt;/i-button&gt;
+
+//子组件&lt;i-button&gt;
+&lt;template&gt;
+  &lt;button&gt;
+    &lt;slot :childrenName=&quot;childrenData&quot;&gt;&lt;/slot&gt;
+  &lt;/button&gt;
+&lt;/template&gt;
+
+data(){
+    return{
+      childrenData:&quot;hello slot-scope&quot;
     }
-    return arr;
-}
-</code></pre><h1 id="四、快速排序"><a href="#四、快速排序" class="headerlink" title="四、快速排序"></a>四、快速排序</h1><pre><code>//先设置一个中间值
-//把小于中间值的放在左边，把大于中间值的放在右边
-//重复前面两个步骤
+},
 
-function quickSort(arr){
-    if(arr.length &lt;=1 ){
-        return arr;
+//这里父组件就会拿到子组件childrenData的值，显示为&lt;button&gt;hello slot-scope&lt;/button&gt;
+//解释下，parentName可以理解是父组件与子组件之间的标识，childrenName才是真正绑定的数据
+</code></pre><p>如果我们从父组件中传值过去到子组件中显示，就需要利用父子组件之间传值的方法了：</p>
+<pre><code>//父组件
+&lt;i-button :parenDataName=&quot;parentData&quot;&gt;
+  &lt;template  slot-scope=&quot;parentName&quot;&gt;{{parentName.childrenName}}&lt;/template&gt;
+&lt;/i-button&gt;
+
+data(){
+    return{
+      parentData:&quot;hello slot-scope parent&quot;
     }
+  },
 
-    let pivotIndex = Math.floor(arr.length/2);
-    let pivot = arr.splice(pivotIndex,1); //截取中间值，如果此处使用pivot=arr[index]; 那么将会出现无限递归的错误
+//子组件&lt;i-button&gt;
+&lt;template&gt;
+  &lt;button&gt;
+    &lt;slot :childrenName=&quot;childrenData&quot;&gt;&lt;/slot&gt;
+  &lt;/button&gt;
+  &lt;button&gt;
+    &lt;slot :childrenName=&quot;parentDataName&quot;&gt;&lt;/slot&gt;
+  &lt;/button&gt;
+&lt;/template&gt;
 
-    let left = [];
-    let right = [];
-
-    for(let i = 0; i &lt; arr.length; i++){
-        if(arr[i] &lt; pivot){
-            left.push(arr[i]);
-        }else{
-            right.push(arr[i]);
-        }
+props: {
+    parentDataName:{}
+},
+data(){
+    return{
+      childrenData:&quot;hello slot-scope children&quot;
     }
+},
 
-    return quickSort(left).concat(pivot,quickSort(right));
-}
-</code></pre><h1 id="五、归并排序"><a href="#五、归并排序" class="headerlink" title="五、归并排序"></a>五、归并排序</h1><pre><code>//归并排序是一种分治算法。
-//本质上就是把一个原始数组切分成较小的数组，直到每个小数组只有一个位置。
-//接着把小数组归并成较大的数组，在归并过程中也会完成排序，直到最后只有一个排序完毕的大数组
-
-function mergeSort(arr) {
-    let len = arr.length;
-    if(len &lt; 2) {
-        return arr;
-    }
-    let middle = Math.floor(len / 2),
-    left = arr.slice(0, middle),
-    right = arr.slice(middle);
-    return merge(mergeSort(left), mergeSort(right));
-}
-
-function merge(left, right){
-    let result = [];
-    while (left.length &amp;&amp; right.length) {
-        if (left[0] &lt;= right[0]) {
-            result.push(left.shift());
-        } else {
-            result.push(right.shift());
-        }
-    }
-    result.push(...left);
-    result.push(...right);
-    return result;
-}
-</code></pre><h1 id="六、堆排序"><a href="#六、堆排序" class="headerlink" title="六、堆排序"></a>六、堆排序</h1><pre><code>1）索引0是树的根节点；
-2）除根节点为，任意节点N的父节点是N/2；
-3）节点L的左子节点是2*L；
-4）节点R的右子节点为2*R + 1
-// 本质上就是先构建二叉树，然后把根节点与最后一个进行交换，
-//然后对剩下对元素进行二叉树构建，进行交换，直到剩下最后一个
-
-var len;    //因为声明的多个函数都需要数据长度，所以把len设置成为全局变量
-
-function buildMaxHeap(arr) {   //建立大顶堆
-    len = arr.length;
-    for (let i = Math.floor(len / 2); i &gt;= 0; i--) {
-        heapify(arr, i);
-    }
-}
-
-function heapify(arr, i) {     //堆调整
-    let left = 2 * i + 1;
-    let right = 2 * i + 2;
-    let largest = i;
-    if (left &lt; len &amp;&amp; arr[left] &gt; arr[largest]) {
-        largest = left;
-    }
-    if (right &lt; len &amp;&amp; arr[right] &gt; arr[largest]) {
-        largest = right;
-    }
-    if (largest !== i) {
-        [arr[i], arr[largest]] = [arr[largest], arr[i]];
-        heapify(arr, largest);
-    }
-}
-
-function heapSort(arr) {
-    buildMaxHeap(arr);
-    for (let i = arr.length - 1; i &gt; 0; i--) {
-        [arr[0],arr[i]]=[arr[i],arr[0]];
-        len--;
-        heapify(arr, 0);
-    }
-    return arr;
-}
-</code></pre><h1 id="七、二分查找"><a href="#七、二分查找" class="headerlink" title="七、二分查找"></a>七、二分查找</h1><pre><code>（1）首先，从有序数组的中间的元素开始搜索，如果该元素正好是目标元素（即要查找的元素），则搜索过程结束，否则进行下一步。
-（2）如果目标元素大于或者小于中间元素，则在数组大于或小于中间元素的那一半区域查找，然后重复第一步的操作。
-（3）如果某一步数组为空，则表示找不到目标元素。
-
-function binary_search(arr, key) {
-    let low = 0;
-    let high = arr.length - 1;
-    while(low &lt;= high){
-        let mid = parseInt((high + low) / 2);
-        if(key === arr[mid]){
-            return  mid;
-        }else if(key &gt; arr[mid]){
-            low = mid + 1;
-        }else if(key &lt; arr[mid]){
-            high = mid -1;
-        }else{
-            return -1;
-        }
-    }
-}
+//这里一个是直接访问子组件中的值，一个是先自己传递过去之后再访问子组件中的值
+</code></pre><h1 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h1><p>现在我们已经知道了插槽与父子组件之间传值的基本用法，那么他们之间有什么区别呢？我概况为以下几点</p>
+<pre><code>1.插槽之间的传值，插槽要显示的内容是写在父组件中的，也就是父组件中的数据是写在自己的组件里。
+2.而父子组件之间的传值，是在当前组件拿到了数据之后，然后才在当自己的组件中显示。
+3.如果说他们之间有什么联系的话，插槽传值，其实类似于父组件向子组件传值。而插槽默认值的写法又像是子组件向父组件传值，只是如果父组件有传值过来，会被覆盖掉了而已。
 </code></pre>
       
     </div>
@@ -649,7 +638,7 @@ function binary_search(arr, key) {
       
         <div class="post-tags">
           
-            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
+            <a href="/tags/vue传值/" rel="tag"><i class="fa fa-tag"></i> vue传值</a>
           
         </div>
       
@@ -662,8 +651,8 @@ function binary_search(arr, key) {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/01/css常用布局实现/" rel="next" title="css常用布局实现">
-                <i class="fa fa-chevron-left"></i> css常用布局实现
+              <a href="/2018/12/08/let和var不得不说的关系/" rel="next" title="let和var不得不说的关系">
+                <i class="fa fa-chevron-left"></i> let和var不得不说的关系
               </a>
             
           </div>
@@ -671,10 +660,6 @@ function binary_search(arr, key) {
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/21/二叉树相关/" rel="prev" title="二叉树相关">
-                二叉树相关 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -870,7 +855,7 @@ function binary_search(arr, key) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、冒泡排序"><span class="nav-text">一、冒泡排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、选择排序"><span class="nav-text">二、选择排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、插入排序"><span class="nav-text">三、插入排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、快速排序"><span class="nav-text">四、快速排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、归并排序"><span class="nav-text">五、归并排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、堆排序"><span class="nav-text">六、堆排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、二分查找"><span class="nav-text">七、二分查找</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-父子组件之间的传值"><span class="nav-text">1.父子组件之间的传值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#子组件传值到父组件"><span class="nav-text">子组件传值到父组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#父组件向子组件传值"><span class="nav-text">父组件向子组件传值</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-插槽传值，插槽的定义是子组件显示什么内容由父组件决定"><span class="nav-text">2.插槽传值，插槽的定义是子组件显示什么内容由父组件决定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#插槽传值的基本用法："><span class="nav-text">插槽传值的基本用法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给插槽起个名字："><span class="nav-text">给插槽起个名字：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#作用域插槽："><span class="nav-text">作用域插槽：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#区别"><span class="nav-text">区别</span></a></li></ol></div>
             
 
           </div>
@@ -1041,9 +1026,9 @@ function binary_search(arr, key) {
   
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2018/11/21/JavaScript实现常用排序/';
-        this.page.identifier = '2018/11/21/JavaScript实现常用排序/';
-        this.page.title = 'JavaScript实现常用排序';
+        this.page.url = 'http://yoursite.com/2019/03/06/vue插槽与父子组件传值/';
+        this.page.identifier = '2019/03/06/vue插槽与父子组件传值/';
+        this.page.title = 'vue插槽与父子组件传值';
         };
       function loadComments () {
         var d = document, s = d.createElement('script');
