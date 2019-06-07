@@ -113,7 +113,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue插槽与父子组件传值">
 <meta property="og:url" content="http://yoursite.com/2019/03/06/vue插槽与父子组件传值/index.html">
-<meta property="og:site_name" content="犹廷坤的博客">
+<meta property="og:site_name" content="犹廷坤 - 成为一束光吧">
 <meta property="og:description" content="1.父子组件之间的传值子组件传值到父组件子组件在向父组件传值的时候，主要是通过子组件通过$emit()函数派发出事件，然后再父组件中通过事件监听: //比如定义了一个子组件&amp;lt;i-button&amp;gt; &amp;lt;template&amp;gt;   &amp;lt;button @click=&amp;quot;handleClick&amp;quot;&amp;gt;     &amp;lt;slot&amp;gt;&amp;lt;/slot&amp;gt;">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-03-06T12:34:56.255Z">
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>vue插槽与父子组件传值 | 犹廷坤的博客</title>
+  <title>vue插槽与父子组件传值 | 犹廷坤 - 成为一束光吧</title>
   
 
 
@@ -177,7 +177,6 @@
 </noscript>
 
 </head>
-
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
@@ -195,7 +194,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <!-- <span class="logo-line-before"><i></i></span> -->
-        <span class="site-title">犹廷坤的博客</span>
+        <span class="site-title">犹廷坤 - 成为一束光吧</span>
         <!-- <span class="logo-line-after"><i></i></span> -->
       </a>
     </div>
@@ -360,7 +359,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="犹廷坤的博客">
+      <meta itemprop="name" content="犹廷坤 - 成为一束光吧">
     </span>
 
     
@@ -903,9 +902,39 @@ data(){
 	</span>
 	<i class="fa fa-eye"></i>
 	<span id="busuanzi_container_site_pv">
-	  &nbsp;本站总访问量：<span id="busuanzi_value_site_pv"></span>次
+	  &nbsp;本站总访问量：<span id="busuanzi_value_site_pv"></span>次&nbsp;&nbsp;
 	</span>
+	<span id="sitetime"></span>
 </div>
+<!--
+<script language=javascript>
+	  function siteTime(){
+		window.setTimeout("siteTime()", 1000);
+		var seconds = 1000;
+		var minutes = seconds * 60;
+		var hours = minutes * 60;
+		var days = hours * 24;
+		var years = days * 365;
+		var today = new Date();
+		var todayYear = today.getFullYear();
+		var todayMonth = today.getMonth()+1;
+		var todayDate = today.getDate();
+		var todayHour = today.getHours();
+		var todayMinute = today.getMinutes();
+		var todaySecond = today.getSeconds();
+		var t1 = Date.UTC(2018,06,07,12,00,00); // 设置建立网站的时间
+		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+		var diff = t2-t1;
+		var diffYears = Math.floor(diff/years);
+		var diffDays = Math.floor((diff/days)-diffYears*365);
+		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+		document.getElementById("sitetime").innerHTML=" 已运行"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+	  }
+	  siteTime();
+	</script>
+  -->
 
 
 <!--
@@ -1097,5 +1126,5 @@ data(){
   <!-- ҳ����С���� -->
   <script type="text/javascript" src="/js/src/clicklove.js"></script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"live2d-widget-model-hijijki"},"display":{"position":"right","width":70,"height":120},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":100,"vOffset":-35},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
 </html>

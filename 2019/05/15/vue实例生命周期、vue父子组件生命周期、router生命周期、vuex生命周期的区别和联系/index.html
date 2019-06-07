@@ -113,7 +113,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue实例生命周期、vue父子组件生命周期、router生命周期、vuex生命周期的区别和联系">
 <meta property="og:url" content="http://yoursite.com/2019/05/15/vue实例生命周期、vue父子组件生命周期、router生命周期、vuex生命周期的区别和联系/index.html">
-<meta property="og:site_name" content="犹廷坤的博客">
+<meta property="og:site_name" content="犹廷坤 - 成为一束光吧">
 <meta property="og:description" content="销毁和创建组件的生命周期： 1.通过v-if来控制组件的销毁和重建 刷新当前页面： 1.直接刷新整个页面 location.reload()  this.$router.go(0)  //这两种都可以刷新当前页面，缺点就相当于按ctrl+F5强制刷新页面，会出现一个瞬间的空白页面。 2.新建一个空白页面supplierAllBack.vue，点击确定的时候先跳转到这个空白页，然后再跳转回来。 3.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-05-15T08:40:01.009Z">
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>vue实例生命周期、vue父子组件生命周期、router生命周期、vuex生命周期的区别和联系 | 犹廷坤的博客</title>
+  <title>vue实例生命周期、vue父子组件生命周期、router生命周期、vuex生命周期的区别和联系 | 犹廷坤 - 成为一束光吧</title>
   
 
 
@@ -177,7 +177,6 @@
 </noscript>
 
 </head>
-
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
@@ -195,7 +194,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <!-- <span class="logo-line-before"><i></i></span> -->
-        <span class="site-title">犹廷坤的博客</span>
+        <span class="site-title">犹廷坤 - 成为一束光吧</span>
         <!-- <span class="logo-line-after"><i></i></span> -->
       </a>
     </div>
@@ -360,7 +359,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="犹廷坤的博客">
+      <meta itemprop="name" content="犹廷坤 - 成为一束光吧">
     </span>
 
     
@@ -897,9 +896,39 @@ methods中方法生成：
 	</span>
 	<i class="fa fa-eye"></i>
 	<span id="busuanzi_container_site_pv">
-	  &nbsp;本站总访问量：<span id="busuanzi_value_site_pv"></span>次
+	  &nbsp;本站总访问量：<span id="busuanzi_value_site_pv"></span>次&nbsp;&nbsp;
 	</span>
+	<span id="sitetime"></span>
 </div>
+<!--
+<script language=javascript>
+	  function siteTime(){
+		window.setTimeout("siteTime()", 1000);
+		var seconds = 1000;
+		var minutes = seconds * 60;
+		var hours = minutes * 60;
+		var days = hours * 24;
+		var years = days * 365;
+		var today = new Date();
+		var todayYear = today.getFullYear();
+		var todayMonth = today.getMonth()+1;
+		var todayDate = today.getDate();
+		var todayHour = today.getHours();
+		var todayMinute = today.getMinutes();
+		var todaySecond = today.getSeconds();
+		var t1 = Date.UTC(2018,06,07,12,00,00); // 设置建立网站的时间
+		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+		var diff = t2-t1;
+		var diffYears = Math.floor(diff/years);
+		var diffDays = Math.floor((diff/days)-diffYears*365);
+		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+		document.getElementById("sitetime").innerHTML=" 已运行"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+	  }
+	  siteTime();
+	</script>
+  -->
 
 
 <!--
@@ -1091,5 +1120,5 @@ methods中方法生成：
   <!-- ҳ����С���� -->
   <script type="text/javascript" src="/js/src/clicklove.js"></script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"live2d-widget-model-hijijki"},"display":{"position":"right","width":70,"height":120},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":100,"vOffset":-35},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
 </html>

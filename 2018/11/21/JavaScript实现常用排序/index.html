@@ -113,7 +113,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript实现常用排序">
 <meta property="og:url" content="http://yoursite.com/2018/11/21/JavaScript实现常用排序/index.html">
-<meta property="og:site_name" content="犹廷坤的博客">
+<meta property="og:site_name" content="犹廷坤 - 成为一束光吧">
 <meta property="og:description" content="一、冒泡排序//相邻两个数之间进行排序 //外层长度为length //内层长度为length-1-i,因为内层比较的时候会j+1，所以这里是length-1 //第一次内层循环完会把最大的一个数放在最后，然后又从第一位开始循环。  function bubbleSort(arr){     for(let i = 0; i &amp;lt; arr.length; i++){         for(l">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-11-21T09:58:00.673Z">
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>JavaScript实现常用排序 | 犹廷坤的博客</title>
+  <title>JavaScript实现常用排序 | 犹廷坤 - 成为一束光吧</title>
   
 
 
@@ -177,7 +177,6 @@
 </noscript>
 
 </head>
-
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
@@ -195,7 +194,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <!-- <span class="logo-line-before"><i></i></span> -->
-        <span class="site-title">犹廷坤的博客</span>
+        <span class="site-title">犹廷坤 - 成为一束光吧</span>
         <!-- <span class="logo-line-after"><i></i></span> -->
       </a>
     </div>
@@ -360,7 +359,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="犹廷坤的博客">
+      <meta itemprop="name" content="犹廷坤 - 成为一束光吧">
     </span>
 
     
@@ -913,9 +912,39 @@ function binary_search(arr, key) {
 	</span>
 	<i class="fa fa-eye"></i>
 	<span id="busuanzi_container_site_pv">
-	  &nbsp;本站总访问量：<span id="busuanzi_value_site_pv"></span>次
+	  &nbsp;本站总访问量：<span id="busuanzi_value_site_pv"></span>次&nbsp;&nbsp;
 	</span>
+	<span id="sitetime"></span>
 </div>
+<!--
+<script language=javascript>
+	  function siteTime(){
+		window.setTimeout("siteTime()", 1000);
+		var seconds = 1000;
+		var minutes = seconds * 60;
+		var hours = minutes * 60;
+		var days = hours * 24;
+		var years = days * 365;
+		var today = new Date();
+		var todayYear = today.getFullYear();
+		var todayMonth = today.getMonth()+1;
+		var todayDate = today.getDate();
+		var todayHour = today.getHours();
+		var todayMinute = today.getMinutes();
+		var todaySecond = today.getSeconds();
+		var t1 = Date.UTC(2018,06,07,12,00,00); // 设置建立网站的时间
+		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+		var diff = t2-t1;
+		var diffYears = Math.floor(diff/years);
+		var diffDays = Math.floor((diff/days)-diffYears*365);
+		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+		document.getElementById("sitetime").innerHTML=" 已运行"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+	  }
+	  siteTime();
+	</script>
+  -->
 
 
 <!--
@@ -1107,5 +1136,5 @@ function binary_search(arr, key) {
   <!-- ҳ����С���� -->
   <script type="text/javascript" src="/js/src/clicklove.js"></script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"live2d-widget-model-hijijki"},"display":{"position":"right","width":70,"height":120},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":100,"vOffset":-35},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
 </html>
