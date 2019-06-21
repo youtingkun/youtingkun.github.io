@@ -108,18 +108,18 @@
 
 
 
-  <meta name="description" content="销毁和创建组件的生命周期： 1.通过v-if来控制组件的销毁和重建 刷新当前页面： 1.直接刷新整个页面 location.reload()  this.$router.go(0)  //这两种都可以刷新当前页面，缺点就相当于按ctrl+F5强制刷新页面，会出现一个瞬间的空白页面。 2.新建一个空白页面supplierAllBack.vue，点击确定的时候先跳转到这个空白页，然后再跳转回来。 3.">
+  <meta name="description" content="销毁和创建组件的生命周期： 1.通过v-if来控制组件的销毁和重建 刷新当前页面： 1.直接刷新整个页面 location.reload()  this.$router.go(0)  //这两种都可以刷新当前页面，缺点就相当于按ctrl+F5强制刷新页面，会出现一个瞬间的空白页面。 2.新建一个空白页面supplierAllBack.vue，点击确定的时候先跳转到这个空白页，然后再跳转回来。">
 <meta name="keywords" content="vue生命周期">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue实例生命周期、vue父子组件生命周期、router生命周期、vuex生命周期的区别和联系">
 <meta property="og:url" content="http://yoursite.com/2019/05/15/vue实例生命周期、vue父子组件生命周期、router生命周期、vuex生命周期的区别和联系/index.html">
 <meta property="og:site_name" content="犹廷坤 - 成为一束光吧">
-<meta property="og:description" content="销毁和创建组件的生命周期： 1.通过v-if来控制组件的销毁和重建 刷新当前页面： 1.直接刷新整个页面 location.reload()  this.$router.go(0)  //这两种都可以刷新当前页面，缺点就相当于按ctrl+F5强制刷新页面，会出现一个瞬间的空白页面。 2.新建一个空白页面supplierAllBack.vue，点击确定的时候先跳转到这个空白页，然后再跳转回来。 3.">
+<meta property="og:description" content="销毁和创建组件的生命周期： 1.通过v-if来控制组件的销毁和重建 刷新当前页面： 1.直接刷新整个页面 location.reload()  this.$router.go(0)  //这两种都可以刷新当前页面，缺点就相当于按ctrl+F5强制刷新页面，会出现一个瞬间的空白页面。 2.新建一个空白页面supplierAllBack.vue，点击确定的时候先跳转到这个空白页，然后再跳转回来。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-15T08:40:01.009Z">
+<meta property="og:updated_time" content="2019-06-21T11:58:26.225Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue实例生命周期、vue父子组件生命周期、router生命周期、vuex生命周期的区别和联系">
-<meta name="twitter:description" content="销毁和创建组件的生命周期： 1.通过v-if来控制组件的销毁和重建 刷新当前页面： 1.直接刷新整个页面 location.reload()  this.$router.go(0)  //这两种都可以刷新当前页面，缺点就相当于按ctrl+F5强制刷新页面，会出现一个瞬间的空白页面。 2.新建一个空白页面supplierAllBack.vue，点击确定的时候先跳转到这个空白页，然后再跳转回来。 3.">
+<meta name="twitter:description" content="销毁和创建组件的生命周期： 1.通过v-if来控制组件的销毁和重建 刷新当前页面： 1.直接刷新整个页面 location.reload()  this.$router.go(0)  //这两种都可以刷新当前页面，缺点就相当于按ctrl+F5强制刷新页面，会出现一个瞬间的空白页面。 2.新建一个空白页面supplierAllBack.vue，点击确定的时候先跳转到这个空白页，然后再跳转回来。">
 
 
 
@@ -466,6 +466,7 @@ this.$router.go(0)
 
 //这两种都可以刷新当前页面，缺点就相当于按ctrl+F5强制刷新页面，会出现一个瞬间的空白页面。
 </code></pre><p>2.新建一个空白页面supplierAllBack.vue，点击确定的时候先跳转到这个空白页，然后再跳转回来。</p>
+<a id="more"></a> 
 <p>3.使用provide/inject组合方式。</p>
 <p>在App.vue中</p>
 <pre><code>&lt;template&gt;
