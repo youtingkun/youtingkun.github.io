@@ -349,6 +349,191 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/21/JS宏任务与微任务/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="犹廷坤">
+      <meta itemprop="description" content="生活应该像时钟一样">
+      <meta itemprop="image" content="https://i.imgur.com/aJWAcZ1.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="犹廷坤 - 成为一束光吧">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/21/JS宏任务与微任务/" class="post-title-link" itemprop="http://yoursite.com/index.html">JS宏任务与微任务</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-21 19:52:11" itemprop="dateCreated datePublished" datetime="2019-06-21T19:52:11+08:00">2019-06-21</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/javascript/" itemprop="url" rel="index"><span itemprop="name">javascript</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/06/21/JS宏任务与微任务/#comments" itemprop="discussionUrl">
+                
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/06/21/JS宏任务与微任务/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="宏任务与微任务"><a href="#宏任务与微任务" class="headerlink" title="宏任务与微任务"></a>宏任务与微任务</h1><h2 id="同步任务和异步任务"><a href="#同步任务和异步任务" class="headerlink" title="同步任务和异步任务"></a>同步任务和异步任务</h2><p>首先js是单线程，任务需要一个一个的执行。但是如果一个任务耗时过长，就会让后面的任务等待。为了解决这个问题，程序员将任务分为两大类：同步任务和异步任务。</p>
+<p><img src="https://i.loli.net/2019/06/21/5d0cc4677261141461.png" alt="164974fb89da87c5.png"></p>
+<p>简单解释下这张图的逻辑:</p>
+<ul>
+<li>同步任务会进入主线程，异步任务会进入Event Table并注册函数。</li>
+<li>当指定事情完成时，Event Table会将函数移入Event Queue。</li>
+<li>主线程的任务执行完毕为空时，会去Event Queue读取函数进入主线程执行。</li>
+<li>不断重复上述过程，Event Loop(事件循环)</li>
+</ul>
+<blockquote>
+<p>js引擎存在monitoring process进程，会持续不断的检查主线程是否为空。 </p>
+</blockquote>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/06/21/JS宏任务与微任务/" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+         
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/15/vue实例生命周期、vue父子组件生命周期、router生命周期、vuex生命周期的区别和联系/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1093,183 +1278,6 @@ for (let c1 = 1; c1 &lt;= 3; c1++) {
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/26/css选择器/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="犹廷坤">
-      <meta itemprop="description" content="生活应该像时钟一样">
-      <meta itemprop="image" content="https://i.imgur.com/aJWAcZ1.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="犹廷坤 - 成为一束光吧">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/11/26/css选择器/" class="post-title-link" itemprop="http://yoursite.com/index.html">css选择器</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-11-26 18:26:51" itemprop="dateCreated datePublished" datetime="2018-11-26T18:26:51+08:00">2018-11-26</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/css/" itemprop="url" rel="index"><span itemprop="name">css</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/11/26/css选择器/#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/11/26/css选择器/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="一、简单选择器："><a href="#一、简单选择器：" class="headerlink" title="一、简单选择器："></a>一、简单选择器：</h1><p><strong>1.标签选择器</strong></p>
-<p><strong>2.类选择器</strong></p>
-<p><strong>3.id选择器</strong></p>
-<p><strong>4.通用选择器*</strong></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/11/26/css选择器/" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-         
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-       
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1321,7 +1329,7 @@ for (let c1 = 1; c1 &lt;= 3; c1++) {
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1668,5 +1676,5 @@ for (let c1 = 1; c1 &lt;= 3; c1++) {
   <!-- ҳ����С���� -->
   <script type="text/javascript" src="/js/src/clicklove.js"></script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":100,"vOffset":-35},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":100,"vOffset":-35},"mobile":{"show":false},"react":{"opacity":0.7},"log":false});</script></body>
 </html>
