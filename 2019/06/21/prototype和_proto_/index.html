@@ -108,25 +108,25 @@
 
 
 
-  <meta name="description" content="flex布局相关概念： 存在两个轴： main axis 横轴（主轴）、 cross axis 纵轴（交叉轴）。 如果一个方向被设置成为了主轴，那么另外一个方向就为交叉轴。也就是说这两个轴是相对的。横轴可以是主轴也可以是交叉轴。纵轴可以是主轴也可以是交叉轴。 横轴的开始位置叫 main start，结束位置叫main end。纵轴的开始位置叫 cross start，结束位置叫 cross end">
-<meta name="keywords" content="布局">
+  <meta name="description" content="为什么会产生prototype和proto由于JavaScript中没有类的概念，所有的数据类型都是object。类的一个重要的功能就是实现继承，所以才会产生出了prototype和proto来模仿类的功能。 Function和ObjectFunction 和 Object 的区别:  Function 可以被执行,Prototype是函数独有的属性 Function 可以当做 Object 的构">
+<meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="flex布局大法好">
-<meta property="og:url" content="http://yoursite.com/2018/12/07/flex布局大法好/index.html">
+<meta property="og:title" content="prototype和_proto_">
+<meta property="og:url" content="http://yoursite.com/2019/06/21/prototype和_proto_/index.html">
 <meta property="og:site_name" content="犹廷坤 - JS会改变世界">
-<meta property="og:description" content="flex布局相关概念： 存在两个轴： main axis 横轴（主轴）、 cross axis 纵轴（交叉轴）。 如果一个方向被设置成为了主轴，那么另外一个方向就为交叉轴。也就是说这两个轴是相对的。横轴可以是主轴也可以是交叉轴。纵轴可以是主轴也可以是交叉轴。 横轴的开始位置叫 main start，结束位置叫main end。纵轴的开始位置叫 cross start，结束位置叫 cross end">
+<meta property="og:description" content="为什么会产生prototype和proto由于JavaScript中没有类的概念，所有的数据类型都是object。类的一个重要的功能就是实现继承，所以才会产生出了prototype和proto来模仿类的功能。 Function和ObjectFunction 和 Object 的区别:  Function 可以被执行,Prototype是函数独有的属性 Function 可以当做 Object 的构">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-07T09:12:03.479Z">
+<meta property="og:updated_time" content="2019-06-21T12:10:28.981Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="flex布局大法好">
-<meta name="twitter:description" content="flex布局相关概念： 存在两个轴： main axis 横轴（主轴）、 cross axis 纵轴（交叉轴）。 如果一个方向被设置成为了主轴，那么另外一个方向就为交叉轴。也就是说这两个轴是相对的。横轴可以是主轴也可以是交叉轴。纵轴可以是主轴也可以是交叉轴。 横轴的开始位置叫 main start，结束位置叫main end。纵轴的开始位置叫 cross start，结束位置叫 cross end">
+<meta name="twitter:title" content="prototype和_proto_">
+<meta name="twitter:description" content="为什么会产生prototype和proto由于JavaScript中没有类的概念，所有的数据类型都是object。类的一个重要的功能就是实现继承，所以才会产生出了prototype和proto来模仿类的功能。 Function和ObjectFunction 和 Object 的区别:  Function 可以被执行,Prototype是函数独有的属性 Function 可以当做 Object 的构">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/07/flex布局大法好/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/06/21/prototype和_proto_/"/>
 
 
 
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>flex布局大法好 | 犹廷坤 - JS会改变世界</title>
+  <title>prototype和_proto_ | 犹廷坤 - JS会改变世界</title>
   
 
 
@@ -350,7 +350,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/07/flex布局大法好/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/21/prototype和_proto_/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="犹廷坤">
@@ -367,7 +367,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">flex布局大法好
+          <h2 class="post-title" itemprop="name headline">prototype和_proto_
               
             
           </h2>
@@ -392,7 +392,7 @@
                 
               
 
-              <time title="创建时间：2018-12-07 17:06:44" itemprop="dateCreated datePublished" datetime="2018-12-07T17:06:44+08:00">2018-12-07</time>
+              <time title="创建时间：2019-06-21 20:07:58" itemprop="dateCreated datePublished" datetime="2019-06-21T20:07:58+08:00">2019-06-21</time>
             
 
             
@@ -410,7 +410,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/css/" itemprop="url" rel="index"><span itemprop="name">css</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/javascript/" itemprop="url" rel="index"><span itemprop="name">javascript</span></a></span>
 
                 
                 
@@ -425,10 +425,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/07/flex布局大法好/#comments" itemprop="discussionUrl">
+                <a href="/2019/06/21/prototype和_proto_/#comments" itemprop="discussionUrl">
                 
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/12/07/flex布局大法好/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2019/06/21/prototype和_proto_/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -456,74 +456,37 @@
       
 
       
-        <h1 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h1><p><strong>相关概念：</strong></p>
-<p>存在两个轴： <strong>main axis</strong> 横轴（主轴）、 <strong>cross axis</strong> 纵轴（交叉轴）。</p>
-<p>如果一个方向被设置成为了主轴，那么另外一个方向就为交叉轴。也就是说这两个轴是相对的。横轴可以是主轴也可以是交叉轴。纵轴可以是主轴也可以是交叉轴。</p>
-<p>横轴的开始位置叫 <strong>main start，</strong>结束位置叫<strong>main end</strong>。纵轴的开始位置叫 <strong>cross start</strong>，结束位置叫 <strong>cross end</strong>。</p>
-<p>元素内部的子元素，宽度叫<strong>main size</strong>，高度叫 <strong>cross size</strong>。<br><a id="more"></a></p>
-<p><strong>注意：</strong>当给父元素设置了宽高，而子元素没有设置宽高时：<br>主轴方向的不会被子元素充满，而不是主轴的方向子元素会自动增加或缩减充满父元素。<br>也就是说： </p>
-<pre><code>如果flex-direction：row时，子元素的高度会自动增加填满父元素的高度，而子元素的宽度不会自动增加。
-如果flex-direction：column时，子元素的宽度会自动增加填满父元素的高度，而子元素的高度不会自动增加。
-</code></pre><h2 id="flex布局的父元素元素可以设置六种属性："><a href="#flex布局的父元素元素可以设置六种属性：" class="headerlink" title="flex布局的父元素元素可以设置六种属性："></a>flex布局的父元素元素可以设置六种属性：</h2><pre><code>flex-wrap
-flex-flow
-flex-direction
-justify-content
-align-item
-align-content
-</code></pre><p><strong>flex-direction：</strong>设置内部元素排列的方向</p>
-<pre><code>row //从左到右
-row-reverse //从右到左
-column //从上到下
-column //从下到上
-</code></pre><p><strong>flex-wrap：</strong>设置如果一行放不下，如何换行。如果flex-direction设置为column，那么这里的一行指的是一列</p>
-<pre><code>nowrap //默认，不换行。如果子元素宽度超过一行，那么元素的宽度会被压缩
-wrap //在第一行下方
-wrap-reverse //在第一行上方
-</code></pre><p><strong>flex-flow：</strong>flex-direction和flex-wrap的简写。</p>
-<pre><code>row nowrap //默认值
-</code></pre><p><strong>justify-content：</strong>设置子元素在主轴上的对齐方式。</p>
-<pre><code>flex-start //从主轴的开始进行对齐
-flex-end //从主轴的结尾开始对齐
-flex-center //处于主轴中间
-//前面三个都不会自动改变元素的外边距，后面两个会。
-space-between //除了两边的元素外，其它元素间距相等
-sapce-around //每个元素的间距都相等
-</code></pre><p><strong>align-items：</strong>    设置在纵轴上如何对齐</p>
-<p>//这一行的元素在这一行的高度所在的位置。如果有多行，每一行将会平分父元素的高度。</p>
-<pre><code>flex-start //从纵轴的开始进行对齐
-flex-end //从纵轴的结尾开始对齐
-center //处于纵轴的中间
-baseline //以子元素中第一行文字的基线对齐
-stretch//默认值，如果项目未设置高度或设为auto，将占满整个容器的高度。
-</code></pre><p><strong>align-content</strong>设置了多根轴线的对齐方式。如果只有一根轴线，该属性不起作用。  </p>
-<p>和align-items的区别在于，aligni-items更偏向于一行，而align-content更偏向于多行。<br>简单的来说，只有一行时，设置align-content会失效，而有多行时设置的align-items会被alig-content的设置覆盖掉。</p>
-<pre><code>flex-start //从交叉轴开始进行对齐
-flex-end //从交叉轴结尾开始对齐
-flex-center //处于交叉轴中间
-space-between //除了上下的元素外，其它行间距相等。
-sapce-around //每行的间距都相等
-</code></pre><h2 id="flex布局子元素可以设置的六个属性"><a href="#flex布局子元素可以设置的六个属性" class="headerlink" title="flex布局子元素可以设置的六个属性"></a>flex布局子元素可以设置的六个属性</h2><pre><code>order 
-flex-grow
-flex-shrink
-flex-basis
-flex
-align-self
-</code></pre><p><strong>order：</strong>设置子元素的排列顺序，数值越小越靠前。默认为0，可以为负数</p>
-<pre><code>//1、2、3...相对数值
-//如数值相同，会按照原来的相对位置排列
-</code></pre><p><strong>flex-grow：</strong>设置元素的放大比列，这里的放大比例是指，按剩余空间的大小进行放大。默认0，即不放大，不可以设置负数。</p>
-<pre><code>//1、2、3...为相对剩余空间放大比列
-</code></pre><p><strong>flex-shrink：</strong>设置元素的缩小比列。默认值为1，不可以设置负数。</p>
-<pre><code>//这里的缩小比例是指放不下时的缩小比列，如果设置了nowrap，那么此属性无效。
-//设置的数字越大，空间不足时，缩小的比列越大。
-</code></pre><p><strong>flex-basis：</strong>设置在分配多余空间之前，项目占据主轴的空间大小。浏览器根据这个属性计算是否还有剩余空间。<br>默认值为auto，即元素本身大小。</p>
-<pre><code>//如果同时设置了元素本身的宽高，又设置了flex-basis，计算的时候以flex-basis为准
-</code></pre><p><strong>flex</strong>flex-grow，flex-shrink和flexbasis的简写。</p>
-<pre><code>//默认值为 0，1，auto，后面两个参数可选。
-</code></pre><p><strong>align-self</strong>允许当前元素与其它项目有不一样的对齐方式，即覆盖掉父元素的align-items的值。</p>
-<pre><code>//默认为auto，即继承父元素的align-items的值。
-//属性可以设置align-items中的属性。
-</code></pre>
+        <h1 id="为什么会产生prototype和proto"><a href="#为什么会产生prototype和proto" class="headerlink" title="为什么会产生prototype和proto"></a>为什么会产生prototype和<em>proto</em></h1><p>由于JavaScript中没有类的概念，所有的数据类型都是object。类的一个重要的功能就是实现继承，所以才会产生出了prototype和<em>proto</em>来模仿类的功能。</p>
+<h2 id="Function和Object"><a href="#Function和Object" class="headerlink" title="Function和Object"></a>Function和Object</h2><p>Function 和 Object 的区别:</p>
+<ol>
+<li>Function 可以被执行,Prototype是函数独有的属性</li>
+<li>Function 可以当做 Object 的构造函数，比如当我们使用 new操作符后面跟着一个 Function时，这个 Function会被当成构造函数返回一个对象。所以说函数也是对象的一个构造函数。</li>
+<li>构造函数function有prototype属性，而示例object没有prototype属性。比如下面的函数：</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Parent</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> P = <span class="keyword">new</span> Parent(<span class="string">"张三"</span>)</span><br><span class="line"><span class="built_in">console</span>.log(Parent.prototype) <span class="comment">//Parent&#123;&#125;</span></span><br><span class="line"><span class="built_in">console</span>.log(p.protoyepe) <span class="comment">//undefined</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a> 
+<h1 id="在继承中prototype和proto起到了什么作用"><a href="#在继承中prototype和proto起到了什么作用" class="headerlink" title="在继承中prototype和proto起到了什么作用"></a>在继承中prototype和<strong>proto</strong>起到了什么作用</h1><ol>
+<li><strong>proto</strong>和prototype 不同，prototype 只在 Function 中有，而<strong>proto</strong>则在Function和Object中都有。</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Parent</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> P = <span class="keyword">new</span> Parent(<span class="string">"张三"</span>)</span><br><span class="line"><span class="built_in">console</span>.log(Parent.prototype) <span class="comment">//Parent&#123;&#125;</span></span><br><span class="line"><span class="built_in">console</span>.log(p.protoyepe) <span class="comment">//undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(Parent._proto_) <span class="comment">//[Function]</span></span><br><span class="line"><span class="built_in">console</span>.log(p._proto_) <span class="comment">//Parent&#123;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>简单总结javascript继承的本质：</p>
+<p>==一个对象 A的<strong>proto</strong>属性指向的那个对象B，B就是 A 的原型对象（或者叫父对象），对象 A 可以使用对象 B 中的属性和方法，同时也可以使用对象 B 的 原型对象C 上的属性和方法，以此递归，就是所谓的原型链==</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> A = &#123;<span class="attr">name</span>:<span class="string">'a'</span>&#125;</span><br><span class="line"><span class="keyword">let</span> B = &#123;<span class="attr">age</span>:<span class="string">'18'</span>&#125;</span><br><span class="line"><span class="keyword">let</span> C = &#123;<span class="attr">hobby</span>:<span class="string">'敲代码'</span>&#125;</span><br><span class="line"></span><br><span class="line">A._proto_ = B;</span><br><span class="line">B._proto_ = C;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(A.name) <span class="comment">//a</span></span><br><span class="line"><span class="built_in">console</span>.log(A._proto_.age)<span class="comment">//18</span></span><br><span class="line"><span class="built_in">console</span>.log(A._proto_._proto_.hobby)<span class="comment">//敲代码</span></span><br></pre></td></tr></table></figure>
+<h2 id="new-操作到底做了什么"><a href="#new-操作到底做了什么" class="headerlink" title="new 操作到底做了什么"></a>new 操作到底做了什么</h2><p>通过上面的分析，我们知道 p 是 object 的类型，Parent 是 Function 类型。<br>在 java中，如果你这么写，那么 Parent 应该是一个类（class），但是 javascript 中并没有类，但是我们又很想借鉴这种语法形式，应该怎么办呢，这个任务只能交给 Function。<br>看下完整代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Parent</span>(<span class="params">name,age,hobby</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">this</span>.age = age;</span><br><span class="line">    <span class="keyword">this</span>.hobby = hobby;</span><br><span class="line">&#125;</span><br><span class="line">Parent.prototype.getName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> P = <span class="keyword">new</span> Parent(<span class="string">"张三"</span>,<span class="number">18</span>,<span class="string">"敲代码"</span>)</span><br><span class="line"><span class="built_in">console</span>.log(P.name) <span class="comment">//张三</span></span><br><span class="line"><span class="built_in">console</span>.log(P.age) <span class="comment">//18</span></span><br><span class="line"><span class="built_in">console</span>.log(P.hobby) <span class="comment">//敲代码</span></span><br><span class="line">P._proto_ === Parent.prototype  <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>第一步：Parent 被执行。当使用 new关键字时，Parent 函数会在 p 的作用域下被执行，所以这里的 this 就是实例p，这样，name,age,hobby三个属性才会被当做 p 的属性被创建，</li>
+<li>第二步：将 p.<strong>proto</strong>指向 Parent.prototype,这才是构造函数的精髓所在，所以，p 就继承了 Parent.prototype中的（以及其原型链上的）属性和方法。</li>
+</ul>
+<h2 id="最后总结一下"><a href="#最后总结一下" class="headerlink" title="最后总结一下:"></a>最后总结一下:</h2><ol>
+<li><p><strong>proto</strong>是真正用来查找原型链去获取方法的对象。prototype是在用new创建对象时用来构建<strong>proto</strong>的对象</p>
+</li>
+<li><p>prototype是function独有的,<em>proto</em>是function和object都有的</p>
+</li>
+<li><p>prototype指的是函数本身,<em>proto</em>指的是这个对象所链接到的父对象</p>
+</li>
+</ol>
+
       
     </div>
 
@@ -546,7 +509,7 @@ align-self
       
         <div class="post-tags">
           
-            <a href="/tags/布局/" rel="tag"><i class="fa fa-tag"></i> 布局</a>
+            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
           
         </div>
       
@@ -559,8 +522,8 @@ align-self
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/26/css选择器/" rel="next" title="css选择器">
-                <i class="fa fa-chevron-left"></i> css选择器
+              <a href="/2019/06/21/JS宏任务与微任务/" rel="next" title="JS宏任务与微任务">
+                <i class="fa fa-chevron-left"></i> JS宏任务与微任务
               </a>
             
           </div>
@@ -568,10 +531,6 @@ align-self
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/08/let和var不得不说的关系/" rel="prev" title="let和var不得不说的关系">
-                let和var不得不说的关系 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -769,7 +728,7 @@ align-self
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#flex布局"><span class="nav-text">flex布局</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#flex布局的父元素元素可以设置六种属性："><span class="nav-text">flex布局的父元素元素可以设置六种属性：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#flex布局子元素可以设置的六个属性"><span class="nav-text">flex布局子元素可以设置的六个属性</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么会产生prototype和proto"><span class="nav-text">为什么会产生prototype和proto</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Function和Object"><span class="nav-text">Function和Object</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#在继承中prototype和proto起到了什么作用"><span class="nav-text">在继承中prototype和proto起到了什么作用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#new-操作到底做了什么"><span class="nav-text">new 操作到底做了什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后总结一下"><span class="nav-text">最后总结一下:</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -974,9 +933,9 @@ align-self
   
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2018/12/07/flex布局大法好/';
-        this.page.identifier = '2018/12/07/flex布局大法好/';
-        this.page.title = 'flex布局大法好';
+        this.page.url = 'http://yoursite.com/2019/06/21/prototype和_proto_/';
+        this.page.identifier = '2019/06/21/prototype和_proto_/';
+        this.page.title = 'prototype和_proto_';
         };
       function loadComments () {
         var d = document, s = d.createElement('script');
